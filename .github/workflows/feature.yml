@@ -10,6 +10,7 @@ permissions:
 
 env:
   ARM_CLIENT_ID: ${{ secrets.ARM_CLIENT_ID }}
+  ARM_CLIENT_SECRET: ${{ secrets.ARM_CLIENT_SECRET }}
   ARM_SUBSCRIPTION_ID: ${{ secrets.ARM_SUBSCRIPTION_ID }}
   ARM_TENANT_ID: ${{ secrets.ARM_TENANT_ID }}
 jobs:
@@ -18,7 +19,12 @@ jobs:
     steps:
       - name: 'Az CLI login'
         uses: azure/login@v1
-        
+        with:
+          client-id: ${{ secrets.ARM_CLIENT_ID }}
+          client-secret: ${{ secrets.ARM_CLIENT_SECRET }}
+          subscription-id: ${{ secrets.ARM_SUBSCRIPTION_ID }}
+          tenant-id: ${{ secrets.ARM_TENANT_ID }}
+
       - name: Checkout Repository
         uses: actions/checkout@v2
 
