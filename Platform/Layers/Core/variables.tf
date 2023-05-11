@@ -1,5 +1,3 @@
-
-
 variable "root_id" {
   type    = string
   default = "mg-itaudev"

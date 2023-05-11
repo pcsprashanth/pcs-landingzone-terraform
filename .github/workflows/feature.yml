@@ -1,15 +1,18 @@
 name: Run Azure Login
-on: [push]
+
+on: 
+  push:
+    branches: [ main ]
 
 permissions:
       id-token: write
       contents: read
 
 env:
-  ARM_CLIENT_ID: "${{ secrets.AZURE_CLIENT_ID }}"
-  ARM_SUBSCRIPTION_ID: "${{ secrets.AZURE_SUBSCRIPTION_ID }}"
-  ARM_TENANT_ID: "${{ secrets.AZURE_TENANT_ID }}"
-
+  ARM_CLIENT_ID: ${{ secrets.ARM_CLIENT_ID }}
+  ARM_CLIENT_SECRET: ${{ secrets.ARM_CLIENT_SECRET }}
+  ARM_SUBSCRIPTION_ID: ${{ secrets.ARM_SUBSCRIPTION_ID }}
+  ARM_TENANT_ID: ${{ secrets.ARM_TENANT_ID }}
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -17,9 +20,10 @@ jobs:
       - name: 'Az CLI login'
         uses: azure/login@v1
         with:
-          client-id: ${{ secrets.AZURE_CLIENT_ID_PAYG }}
-          tenant-id: ${{ secrets.AZURE_TENANT_ID_PAYG }}
-          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID_PAYG }}
+          client-id: ${{ secrets.ARM_CLIENT_ID }}
+          client-secret: ${{ secrets.ARM_CLIENT_ID_SECRET }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
 
       - name: Checkout Repository
@@ -43,13 +47,13 @@ jobs:
           tfstate_file=".terraform/terraform.tfstate"
           if [ ! -f "$tfstate_file" ]; then
             # Create RG
-            az group create --name BDOTest1 --location brazilsouth
+            az group create --name ITAUTEST --location brazilsouth
             # Create Storage and container
-            az storage account create --name vaaniravinderg01010 --resource-group BDOTest1 --location brazilsouth --sku Standard_LRS --kind StorageV2 --encryption-services blob
-            accountKey=$(az storage account keys list --account-name vaaniravinderg01010 --resource-group BDOTest1 --output tsv --query "[0].value")
-            az storage container create --name containervaani --account-name vaaniravinderg01010 --account-key $accountKey
+            az storage account create --name chandrastorage --resource-group ITAUTEST --location brazilsouth --sku Standard_LRS --kind StorageV2 --encryption-services blob
+            accountKey=$(az storage account keys list --account-name vaaniravinderg01010 --resource-group ITAUTEST --output tsv --query "[0].value")
+            az storage container create --name chandracontainer --account-name chandrastorage --account-key $accountKey
             # Enable storage versioning
-            az storage account blob-service-properties update --account-name vaaniravinderg01010 --resource-group BDOTest1 --enable-versioning true
+            az storage account blob-service-properties update --account-name chandrastorage --resource-group ITAUTEST --enable-versioning true
             echo "::set-output name=accountKey::$accountKey"
           fi
         shell: bash
@@ -62,8 +66,8 @@ jobs:
           cat <<EOF > backend.tf
           terraform {
             backend "azurerm" {
-              storage_account_name = "vaaniravinderg01010"
-              container_name       = "containervaani"
+              storage_account_name = "chandrastorage"
+              container_name       = "chandracontainer"
               key                  = "terraform.tfstate"
             }
           }
