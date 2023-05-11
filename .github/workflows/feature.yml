@@ -20,8 +20,8 @@ jobs:
     steps:
 
       - name: Check Az version
-        run: az -version
-        
+        run: az version
+
       - name: 'Az CLI login'
         uses: azure/login@v1
         
