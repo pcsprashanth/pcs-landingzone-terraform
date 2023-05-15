@@ -22,7 +22,6 @@ jobs:
         uses: azure/login@v1
         with:
           client-id: ${{ secrets.ARM_CLIENT_ID_ITAU }}
-          client-secret: ${{ secrets.ARM_CLIENT_SECRET_ITAU }}
           tenant-id: ${{ secrets.ARM_TENANT_ID_ITAU }}
           subscription-id: ${{ secrets.ARM_SUBSCRIPTION_ID_ITAU }}
           
