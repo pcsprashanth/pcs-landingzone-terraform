@@ -52,11 +52,11 @@ jobs:
             # Create RG
             az group create --name ITAUTEST --location brazilsouth
             # Create Storage and container
-            az storage account create --name chandrastorage1 --resource-group ITAUTEST --location brazilsouth --sku Standard_LRS --kind StorageV2 --encryption-services blob
-            accountKey=$(az storage account keys list --account-name chandrastorage1 --resource-group ITAUTEST --output tsv --query "[0].value")
-            az storage container create --name chandracontainer1 --account-name chandrastorage1 --account-key $accountKey
+            az storage account create --name chandrastorage143 --resource-group ITAUTEST --location brazilsouth --sku Standard_LRS --kind StorageV2 --encryption-services blob
+            accountKey=$(az storage account keys list --account-name chandrastorage143 --resource-group ITAUTEST --output tsv --query "[0].value")
+            az storage container create --name chandracontainer1 --account-name chandrastorage143 --account-key $accountKey
             # Enable storage versioning
-            az storage account blob-service-properties update --account-name chandrastorage1 --resource-group ITAUTEST --enable-versioning true
+            az storage account blob-service-properties update --account-name chandrastorage143 --resource-group ITAUTEST --enable-versioning true
             echo "::set-output name=accountKey::$accountKey"
           fi
         shell: bash
@@ -69,7 +69,7 @@ jobs:
           cat <<EOF > backend.tf
           terraform {
             backend "azurerm" {
-              storage_account_name = "chandrastorage1"
+              storage_account_name = "chandrastorage143"
               container_name       = "chandracontainer1"
               key                  = "terraform.tfstate"
             }
