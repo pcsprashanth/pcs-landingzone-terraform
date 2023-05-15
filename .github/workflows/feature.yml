@@ -5,9 +5,9 @@ on:
     branches: [ main ]
 
 env:
-  ARM_CLIENT_ID: ${{ secrets.ARM_CLIENT_ID_ITAU }}
-  ARM_SUBSCRIPTION_ID: ${{ secrets.ARM_SUBSCRIPTION_ID_ITAU }}
-  ARM_TENANT_ID: ${{ secrets.ARM_TENANT_ID_ITAU }}
+  ARM_CLIENT_ID: ${ secrets.ARM_CLIENT_ID_ITAU }
+  ARM_SUBSCRIPTION_ID: ${ secrets.ARM_SUBSCRIPTION_ID_ITAU }
+  ARM_TENANT_ID: ${ secrets.ARM_TENANT_ID_ITAU }
 
 jobs:
   build-and-deploy:
@@ -19,6 +19,8 @@ jobs:
 
       - name: 'Az CLI login'
         uses: azure/login@v1
+        with:
+          creds: 
         
       - name: Checkout Repository
         uses: actions/checkout@v2
@@ -54,7 +56,7 @@ jobs:
   
       - name: Initialize Terraform Backend
         env:
-          ARM_ACCESS_KEY: ${{ steps.check_backend.outputs.accountKey }}
+          ARM_ACCESS_KEY: ${ steps.check_backend.outputs.accountKey }
         run: |
           touch backend.tf
           cat <<EOF > backend.tf
@@ -67,7 +69,7 @@ jobs:
           }
           EOF
           terraform init
-        working-directory: ${{ github.workspace }}/Platform/Layers/Core
+        working-directory: ${ github.workspace }/Platform/Layers/Core
 
       - name: Terraform validate
         run: terraform validate
@@ -76,7 +78,7 @@ jobs:
       # An exit code of 0 indicated no changes, 1 a terraform failure, 2 there are pending changes.
       - name: Terraform Plan
         env:
-          ARM_ACCESS_KEY: ${{ steps.check_backend.outputs.accountKey }}
+          ARM_ACCESS_KEY: ${ steps.check_backend.outputs.accountKey }
         id: tf-plan
         run: |
           export exitcode=0
@@ -89,15 +91,15 @@ jobs:
           else
             exit 0
           fi
-        working-directory: ${{ github.workspace }}/Platform/Layers/Core
+        working-directory: ${ github.workspace }/Platform/Layers/Core
 
       - name: Terraform Apply
         env:
-          ARM_ACCESS_KEY: ${{ steps.check_backend.outputs.accountKey }}
+          ARM_ACCESS_KEY: ${ steps.check_backend.outputs.accountKey }
         id: tf-apply
         if: github.ref == 'refs/heads/develop' && github.event_name == 'push'
         run: terraform apply -auto-approve tfplan
-        working-directory: ${{ github.workspace }}/Platform/Layers/Core
+        working-directory: ${ github.workspace }/Platform/Layers/Core
 
 
       - name: Install Terrascan
