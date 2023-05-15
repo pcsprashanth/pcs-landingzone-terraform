@@ -5,9 +5,10 @@ on:
     branches: [ main ]
 
 env:
-  ARM_CLIENT_ID: ${ secrets.ARM_CLIENT_ID_ITAU }
-  ARM_SUBSCRIPTION_ID: ${ secrets.ARM_SUBSCRIPTION_ID_ITAU }
-  ARM_TENANT_ID: ${ secrets.ARM_TENANT_ID_ITAU }
+  ARM_CLIENT_ID: ${{ secrets.ARM_CLIENT_ID_ITAU }}
+  ARM_CLIENT_SECRET: ${{secrets.ARM_CLIENT_SECRET_ITAU}}
+  ARM_SUBSCRIPTION_ID: ${{ secrets.ARM_SUBSCRIPTION_ID_ITAU }}
+  ARM_TENANT_ID: ${{ secrets.ARM_TENANT_ID_ITAU }}
 
 jobs:
   build-and-deploy:
@@ -20,8 +21,11 @@ jobs:
       - name: 'Az CLI login'
         uses: azure/login@v1
         with:
-          creds: 
-        
+          client-id: ${{ secrets.ARM_CLIENT_ID_ITAU }}
+          client-secret: ${{ secrets.ARM_CLIENT_SECRET_ITAU }}
+          tenant-id: ${{ secrets.ARM_TENANT_ID_ITAU }}
+          subscription-id: ${{ secrets.ARM_SUBSCRIPTION_ID_ITAU }}
+          
       - name: Checkout Repository
         uses: actions/checkout@v2
 
