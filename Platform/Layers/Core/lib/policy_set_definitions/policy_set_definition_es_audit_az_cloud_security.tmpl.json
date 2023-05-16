@@ -45,9 +45,7 @@
               "value": "[parameters('installLogAnalyticsAgentOnVmMonitoringEffect')]"
             }
           },
-          "groupNames": [
-            "Azure_Security_Benchmark_v3.0_LT-5"
-          ]
+          "groupNames": []
         },
         {
           "policyDefinitionReferenceId": "installLogAnalyticsAgentOnVmssMonitoring",
@@ -57,17 +55,10 @@
               "value": "[parameters('installLogAnalyticsAgentOnVmssMonitoringEffect')]"
             }
           },
-          "groupNames": [
-            "Azure_Security_Benchmark_v3.0_LT-5"
-          ]
+          "groupNames": []
         }
       ],
-      "policyDefinitionGroups": [
-         {
-            "name": "Azure_Security_Benchmark_v3.0_LT-5",
-            "additionalMetadataId": "/providers/Microsoft.PolicyInsights/policyMetadata/Azure_Security_Benchmark_v3.0_LT-5"
-            }
-        ]
+      "policyDefinitionGroups": null
    }
 
 }
