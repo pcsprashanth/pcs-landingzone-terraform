@@ -8,34 +8,64 @@
         "category": "Security Center"
       },
       "parameters": {
-        "useServicePrincipalToProtectSubscriptionsMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Service principals should be used to protect your subscriptions instead of management certificates",
-            "description": "[Deprecated: With Cloud Services (classic) retiring (see https://azure.microsoft.com/updates/cloud-services-retirement-announcement), there will no longer be a need for this assessment as management certificates will be obsolete.] Management certificates allow anyone who authenticates with them to manage the subscription(s) they are associated with. To manage subscriptions more securely, use of service principals with Resource Manager is recommended to limit the impact of a certificate compromise.",
-            "deprecated": true
+        "installLogAnalyticsAgentOnVmMonitoringEffect": {
+            "type": "String",
+            "metadata": {
+              "displayName": "Log Analytics agent should be installed on your virtual machine for Microsoft Defender for Cloud monitoring",
+              "description": "This policy audits any Windows/Linux virtual machines (VMs) if the Log Analytics agent is not installed which Security Center uses to monitor for security vulnerabilities and threats"
+            },
+            "allowedValues": [
+              "AuditIfNotExists",
+              "Disabled"
+            ],
+            "defaultValue": "AuditIfNotExists"
           },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
+          "installLogAnalyticsAgentOnVmssMonitoringEffect": {
+            "type": "String",
+            "metadata": {
+              "displayName": "Log Analytics agent should be installed on your virtual machine scale sets for Microsoft Defender for Cloud monitoring",
+              "description": "Security Center collects data from your Azure virtual machines (VMs) to monitor for security vulnerabilities and threats."
+            },
+            "allowedValues": [
+              "AuditIfNotExists",
+              "Disabled"
+            ],
+            "defaultValue": "AuditIfNotExists"
+          }
+      },
+      "policyDefinitions": [
+        {
+          "policyDefinitionReferenceId": "installLogAnalyticsAgentOnVmMonitoring",
+          "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/a4fe33eb-e377-4efb-ab31-0784311bc499",
+          "parameters": {
+            "effect": {
+              "value": "[parameters('installLogAnalyticsAgentOnVmMonitoringEffect')]"
+            }
+          },
+          "groupNames": [
+            "Azure_Security_Benchmark_v3.0_LT-5"
+          ]
         },
-        "updateOsVersionMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Operating system version should be the most current version for your cloud service roles",
-            "description": "Keeping the operating system (OS) on the most recent supported version for your cloud service roles enhances the systems security posture.",
-            "deprecated": true
+        {
+          "policyDefinitionReferenceId": "installLogAnalyticsAgentOnVmssMonitoring",
+          "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/a3a6ea0c-e018-4933-9ef0-5aaa1501449b",
+          "parameters": {
+            "effect": {
+              "value": "[parameters('installLogAnalyticsAgentOnVmssMonitoringEffect')]"
+            }
           },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
+          "groupNames": [
+            "Azure_Security_Benchmark_v3.0_LT-5"
+          ]
         }
-      } 
-  },
+      ],
+      "policyDefinitionGroups": [
+         {
+            "name": "Azure_Security_Benchmark_v3.0_LT-5",
+            "additionalMetadataId": "/providers/Microsoft.PolicyInsights/policyMetadata/Azure_Security_Benchmark_v3.0_LT-5"
+            }
+        ]
+    },
     "id": "/providers/Microsoft.Authorization/policySetDefinitions/1f3afdf9-d0c9-4c3d-847f-89da613e70a8",
     "type": "Microsoft.Authorization/policySetDefinitions",
     "name": "Azure-Cloud-Security-BenchMark"
