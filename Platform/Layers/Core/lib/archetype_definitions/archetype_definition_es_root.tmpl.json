@@ -1,5 +1,5 @@
 {
-    "es_sandboxes": {
+    "es_root": {
         "policy_assignments": [
             "Azure-Cloud-Security-BenchMark"
         ],
