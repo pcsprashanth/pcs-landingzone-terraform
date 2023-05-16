@@ -29,6 +29,7 @@ module "enterprise_scale" {
   root_parent_id = data.azurerm_client_config.core.tenant_id
   root_id        = var.root_id
   root_name      = var.root_name
+  library_path = "./lib"
 
   ###### Deploys MG structure with naming convention provided by customer and disables deployment of default core structure ######
 
@@ -81,7 +82,7 @@ module "enterprise_scale" {
         parent_management_group_id = "${var.root_id}"
         subscription_ids           = []
         archetype_config = {
-          archetype_id   = "default_empty"
+          archetype_id   = "es_sandboxes"
           parameters     = {}
           access_control = {}
         }
