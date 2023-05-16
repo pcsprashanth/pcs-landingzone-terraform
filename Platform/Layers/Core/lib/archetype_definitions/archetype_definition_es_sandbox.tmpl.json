@@ -4,7 +4,9 @@
             "Azure-Cloud-Security-BenchMark"
         ],
         "policy_definitions": [],
-        "policy_set_definitions": [],
+        "policy_set_definitions": [
+            "Azure-Cloud-Security-BenchMark"
+        ],
         "role_definitions": [],
         "archetype_config": {
             "parameters": {},
