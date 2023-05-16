@@ -1,7 +1,7 @@
 {
     "es_sandboxes": {
         "policy_assignments": [
-            "Azure-Cloud-Security-BenchMark"
+            "Cloud-Security-BenchMark"
         ],
         "policy_definitions": [],
         "policy_set_definitions": [],
