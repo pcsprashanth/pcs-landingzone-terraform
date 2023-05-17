@@ -18,8 +18,7 @@ data "azurerm_client_config" "core" {}
 
 module "enterprise_scale" {
   source  = "Azure/caf-enterprise-scale/azurerm"
-  version = "4.0.0"
-  default_location = "brazilsouth"
+  version = "3.0.0"
 
   providers = {
     azurerm              = azurerm
@@ -30,7 +29,7 @@ module "enterprise_scale" {
   root_parent_id = data.azurerm_client_config.core.tenant_id
   root_id        = var.root_id
   root_name      = var.root_name
-  library_path = "${path.root}/lib"
+  library_path = "./lib"
 
 
   ###### Deploys MG structure with naming convention provided by customer and disables deployment of default core structure ######
