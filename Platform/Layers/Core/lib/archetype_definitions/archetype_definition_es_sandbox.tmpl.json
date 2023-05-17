@@ -1,10 +1,12 @@
 {
     "es_sandboxes": {
         "policy_assignments": [
-            "Cloud-Security-BenchMark"
+            "Audit-UnusedResourcesCostOptimization"
         ],
         "policy_definitions": [],
-        "policy_set_definitions": [],
+        "policy_set_definitions": [
+            "Audit-UnusedResourcesCostOptimization"
+        ],
         "role_definitions": [],
         "archetype_config": {
             "parameters": {},
