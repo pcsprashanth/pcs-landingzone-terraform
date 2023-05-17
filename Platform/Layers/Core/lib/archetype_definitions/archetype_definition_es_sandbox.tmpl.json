@@ -1,7 +1,7 @@
 {
     "es_sandboxes": {
         "policy_assignments": [
-            "Cloud-Security-BenchMark"
+            "Append-AppService-httpsonly"
         ],
         "policy_definitions": [],
         "policy_set_definitions": [],
