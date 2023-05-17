@@ -1,6 +1,8 @@
 {
     "es_root": {
-        "policy_assignments": [],
+        "policy_assignments": [
+            "Cloud-Security-BenchMark"
+        ],
         "policy_definitions": [],
         "policy_set_definitions": [
             "Cloud-Security-BenchMark"
