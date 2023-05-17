@@ -14,7 +14,7 @@
             "message": "Apps should be accessible over https"
           }
         ],
-        "scope": "${current_scope_resource_id}",
+        "scope": "mg-itaudev-sandbox",
         "enforcementMode": null,
         "nonComplianceMessages": [
         {
