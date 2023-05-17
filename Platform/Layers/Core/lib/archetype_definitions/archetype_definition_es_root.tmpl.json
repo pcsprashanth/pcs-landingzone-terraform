@@ -3,7 +3,7 @@
         "policy_assignments": [],
         "policy_definitions": [],
         "policy_set_definitions": [
-            "Enforce-GR-KeyVault"
+            "Cloud-Security-BenchMark"
         ],
         "role_definitions": [],
         "archetype_config": {
