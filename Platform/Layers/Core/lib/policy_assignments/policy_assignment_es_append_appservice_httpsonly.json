@@ -1,0 +1,29 @@
+{
+    "name": "Append-Appservice-httpsonly",
+    "type": "Microsoft.Authorization/policyAssignments",
+    "apiVersion": "2019-09-01",
+    "properties": {
+        "description": "Appends the AppService sites object to ensure that  HTTPS only is enabled for  server/service authentication and protects data in transit from network layer eavesdropping attacks. Please note Append does not enforce compliance use then deny.",
+        "displayName": "Appservice https only",
+        "notScopes": [],
+        "parameters": {
+        } ,
+        "policyDefinitionId": "${root_scope_resource_id}/providers/Microsoft.Authorization/policyDefinitions/Append-AppService-httpsonly",
+        "nonComplianceMessages": [
+          {
+            "message": "Apps should be accessible over https"
+          }
+        ],
+        "scope": "${current_scope_resource_id}",
+        "enforcementMode": null,
+        "nonComplianceMessages": [
+        {
+            "message": "Mandatory tags must be provided."
+        }
+        ]
+    },
+    "location": "${default_location}",
+    "identity": {
+        "type": "SystemAssigned"
+    }
+}
