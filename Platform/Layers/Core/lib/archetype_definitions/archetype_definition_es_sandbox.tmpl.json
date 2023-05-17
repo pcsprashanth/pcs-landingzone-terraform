@@ -4,7 +4,9 @@
             "Enforce-GR-KeyVault"
         ],
         "policy_definitions": [],
-        "policy_set_definitions": [],
+        "policy_set_definitions": [
+            "Enforce-GR-KeyVault"
+        ],
         "role_definitions": [],
         "archetype_config": {
             "parameters": {},
