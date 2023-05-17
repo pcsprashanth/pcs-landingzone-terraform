@@ -2,7 +2,7 @@
     "es_sandboxes": {
         "policy_assignments": [ "Cloud-Security" ],
         "policy_definitions": [],
-        "policy_set_definitions": [ "Cloud-Security" ],
+        "policy_set_definitions": [],
         "role_definitions": [],
         "archetype_config": {
             "parameters": {},
