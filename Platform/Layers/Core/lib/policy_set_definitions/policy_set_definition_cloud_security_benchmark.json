@@ -12,45 +12,6 @@
         "category": "Security Center"
       },
       "parameters": {
-        "useServicePrincipalToProtectSubscriptionsMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Service principals should be used to protect your subscriptions instead of management certificates",
-            "description": "[Deprecated: With Cloud Services (classic) retiring (see https://azure.microsoft.com/updates/cloud-services-retirement-announcement), there will no longer be a need for this assessment as management certificates will be obsolete.] Management certificates allow anyone who authenticates with them to manage the subscription(s) they are associated with. To manage subscriptions more securely, use of service principals with Resource Manager is recommended to limit the impact of a certificate compromise.",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "updateOsVersionMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Operating system version should be the most current version for your cloud service roles",
-            "description": "Keeping the operating system (OS) on the most recent supported version for your cloud service roles enhances the systems security posture.",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "resolveLogAnalyticsHealthIssuesMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Log Analytics agent health issues should be resolved on your machines",
-            "description": "Security Center uses the Log Analytics agent, formerly known as the Microsoft Monitoring Agent (MMA). To make sure your virtual machines are successfully monitored, you need to make sure the agent is installed on the virtual machines and properly collects security events to the configured workspace.",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "AuditIfNotExists"
-        },
         "installLogAnalyticsAgentOnVmMonitoringEffect": {
           "type": "String",
           "metadata": {
@@ -314,19 +275,6 @@
           ],
           "defaultValue": "AuditIfNotExists"
         },
-        "networkSecurityGroupsMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Monitor network security groups",
-            "description": "Enable or disable monitoring of network security groups with permissive rules",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
         "networkSecurityGroupsOnSubnetsMonitoringEffect": {
           "type": "String",
           "metadata": {
@@ -363,19 +311,6 @@
           ],
           "defaultValue": "AuditIfNotExists"
         },
-        "webApplicationFirewallMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Web ports should be restricted on Network Security Groups associated to your VM",
-            "description": "Enable or disable the monitoring of unprotected web applications",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
         "nextGenerationFirewallMonitoringEffect": {
           "type": "String",
           "metadata": {
@@ -388,19 +323,6 @@
           ],
           "defaultValue": "AuditIfNotExists"
         },
-        "vulnerabilityAssesmentMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Vulnerabilities should be remediated by a Vulnerability Assessment solution",
-            "description": "Enable or disable the detection of VM vulnerabilities by a vulnerability assessment solution",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
         "serverVulnerabilityAssessmentEffect": {
           "type": "String",
           "metadata": {
@@ -412,19 +334,6 @@
             "Disabled"
           ],
           "defaultValue": "AuditIfNotExists"
-        },
-        "storageEncryptionMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Audit missing blob encryption for storage accounts",
-            "description": "Enable or disable the monitoring of blob encryption for storage accounts",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "Audit",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
         },
         "jitNetworkAccessMonitoringEffect": {
           "type": "String",
@@ -462,32 +371,6 @@
           ],
           "defaultValue": "AuditIfNotExists"
         },
-        "sqlAuditingMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Monitor unaudited SQL servers in Microsoft Defender for Cloud",
-            "description": "Enable or disable the monitoring of unaudited SQL databases",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "sqlEncryptionMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Monitor unencrypted SQL databases in Microsoft Defender for Cloud",
-            "description": "Enable or disable the monitoring of unencrypted SQL databases",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
         "sqlDbEncryptionMonitoringEffect": {
           "type": "String",
           "metadata": {
@@ -511,58 +394,6 @@
             "Disabled"
           ],
           "defaultValue": "AuditIfNotExists"
-        },
-        "sqlServerAuditingActionsAndGroupsMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: SQL Auditing settings should have Action-Groups configured to capture critical activities",
-            "description": "Enable or disable the monitoring of auditing policy Action-Groups and Actions setting",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "AuditIfNotExists"
-        },
-        "SqlServerAuditingRetentionDaysMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: SQL servers should be configured with auditing retention days greater than 90 days",
-            "description": "Enable or disable the monitoring of SQL servers with auditing retention period less than 90",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "diagnosticsLogsInAppServiceMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Monitor resource logs in Azure App Services",
-            "description": "Enable or disable the monitoring of resource logs in Azure App Services",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "Audit",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "diagnosticsLogsInSelectiveAppServicesMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Resource logs in App Services should be enabled",
-            "description": "Enable or disable the monitoring of resource logs in Azure App Services",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
         },
         "encryptionOfAutomationAccountMonitoringEffect": {
           "type": "String",
@@ -596,19 +427,6 @@
             "description": "The required resource logs retention period in days"
           },
           "defaultValue": "1"
-        },
-        "metricAlertsInBatchAccountMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Metric alert rules should be configured on Batch accounts",
-            "description": "Enable or disable the monitoring of metric alerts in Batch accounts",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
         },
         "classicComputeVMsMonitoringEffect": {
           "type": "String",
@@ -835,20 +653,6 @@
           },
           "defaultValue": "1"
         },
-        "namespaceAuthorizationRulesInServiceBusMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: All authorization rules except RootManageSharedAccessKey should be removed from Service Bus namespace",
-            "description": "Enable or disable the monitoring of Service Bus namespace authorization rules",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "Audit",
-            "Deny",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
         "aadAuthenticationInSqlServerMonitoringEffect": {
           "type": "String",
           "metadata": {
@@ -919,46 +723,6 @@
           ],
           "defaultValue": "Disabled"
         },
-        "diagnosticsLogsInServiceFabricMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Resource logs in Virtual Machine Scale Sets should be enabled",
-            "description": "Enable or disable the monitoring of resource logs in Service Fabric",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "AuditIfNotExists"
-        },
-        "accessRulesInEventHubNamespaceMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: All authorization rules except RootManageSharedAccessKey should be removed from Event Hub namespace",
-            "description": "Enable or disable the monitoring of access rules in Event Hub namespaces",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "Audit",
-            "Deny",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "accessRulesInEventHubMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Authorization rules on the Event Hub instance should be defined",
-            "description": "Enable or disable the monitoring of access rules in Event Hubs",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
         "sqlDbVulnerabilityAssesmentMonitoringEffect": {
           "type": "String",
           "metadata": {
@@ -982,19 +746,6 @@
             "Disabled"
           ],
           "defaultValue": "AuditIfNotExists"
-        },
-        "sqlDbDataClassificationMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Sensitive data in your SQL databases should be classified",
-            "description": "Enable or disable the monitoring of sensitive data classification in databases.",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
         },
         "identityDesignateLessThanOwnersMonitoringEffect": {
           "type": "String",
@@ -1032,37 +783,11 @@
           ],
           "defaultValue": "AuditIfNotExists"
         },
-        "identityEnableMFAForAccountsWithOwnerPermissionsMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Accounts with owner permissions on Azure resources should be MFA enabled",
-            "description": "Enable or disable the monitoring of MFA for accounts with owner permissions in subscription",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "AuditIfNotExists"
-        },
         "identityEnableMFAForWritePermissionsMonitoringEffect": {
           "type": "String",
           "metadata": {
             "displayName": "MFA should be enabled accounts with write permissions on your subscription",
             "description": "Enable or disable the monitoring of MFA for accounts with write permissions in subscription"
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "AuditIfNotExists"
-        },
-        "identityEnableMFAForAccountsWithWritePermissionsMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Accounts with write permissions on Azure resources should be MFA enabled",
-            "description": "Enable or disable the monitoring of MFA for accounts with write permissions in subscription",
-            "deprecated": true
           },
           "allowedValues": [
             "AuditIfNotExists",
@@ -1082,37 +807,11 @@
           ],
           "defaultValue": "AuditIfNotExists"
         },
-        "identityEnableMFAForAccountsWithReadPermissionsMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Accounts with read permissions on Azure resources should be MFA enabled",
-            "description": "Enable or disable the monitoring of MFA for accounts with read permissions in subscription",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "AuditIfNotExists"
-        },
         "identityRemoveDeprecatedAccountWithOwnerPermissionsMonitoringEffect": {
           "type": "String",
           "metadata": {
             "displayName": "Deprecated accounts with owner permissions should be removed from your subscription",
             "description": "Enable or disable the monitoring of deprecated acounts with owner permissions in subscription"
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "AuditIfNotExists"
-        },
-        "identityRemoveBlockedAccountsWithOwnerPermissionsMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Blocked accounts with owner permissions on Azure resources should be removed",
-            "description": "Enable or disable the monitoring of deprecated acounts with owner permissions in subscription",
-            "deprecated": true
           },
           "allowedValues": [
             "AuditIfNotExists",
@@ -1132,37 +831,11 @@
           ],
           "defaultValue": "AuditIfNotExists"
         },
-        "identityRemoveBlockedAccountsWithReadWritePermissionsMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Blocked accounts with read and write permissions on Azure resources should be removed",
-            "description": "Enable or disable the monitoring of deprecated acounts in subscription",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "AuditIfNotExists"
-        },
         "identityRemoveExternalAccountWithOwnerPermissionsMonitoringEffect": {
           "type": "String",
           "metadata": {
             "displayName": "External accounts with owner permissions should be removed from your subscription",
             "description": "Enable or disable the monitoring of external acounts with owner permissions in subscription"
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "AuditIfNotExists"
-        },
-        "identityRemoveGuestAccountsWithOwnerPermissionsMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Guest accounts with owner permissions on Azure resources should be removed",
-            "description": "Enable or disable the monitoring of external acounts with owner permissions in subscription",
-            "deprecated": true
           },
           "allowedValues": [
             "AuditIfNotExists",
@@ -1182,19 +855,6 @@
           ],
           "defaultValue": "AuditIfNotExists"
         },
-        "identityRemoveGuestAccountsWithWritePermissionsMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Guest accounts with write permissions on Azure resources should be removed",
-            "description": "Enable or disable the monitoring of external acounts with write permissions in subscription",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "AuditIfNotExists"
-        },
         "identityRemoveExternalAccountWithReadPermissionsMonitoringEffect": {
           "type": "String",
           "metadata": {
@@ -1206,303 +866,6 @@
             "Disabled"
           ],
           "defaultValue": "AuditIfNotExists"
-        },
-        "identityRemoveGuestAccountsWithReadPermissionsMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Guest accounts with read permissions on Azure resources should be removed",
-            "description": "Enable or disable the monitoring of external acounts with read permissions in subscription",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "AuditIfNotExists"
-        },
-        "apiAppConfigureIPRestrictionsMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Monitor Configure IP restrictions for API App",
-            "description": "Enable or disable the monitoring of IP restrictions for API App",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "functionAppConfigureIPRestrictionsMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Monitor Configure IP restrictions for Function App",
-            "description": "Enable or disable the monitoring of IP restrictions for Function App",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "webAppConfigureIPRestrictionsMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Monitor Configure IP restrictions for Web App",
-            "description": "Enable or disable the monitoring of IP restrictions for Web App",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "apiAppDisableRemoteDebuggingMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Remote debugging should be turned off for API App",
-            "description": "Enable or disable the monitoring of remote debugging for API App",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "functionAppDisableRemoteDebuggingMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "Remote debugging should be turned off for Function App",
-            "description": "Enable or disable the monitoring of remote debugging for Function App"
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "AuditIfNotExists"
-        },
-        "webAppDisableRemoteDebuggingMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "Remote debugging should be turned off for Web Application",
-            "description": "Enable or disable the monitoring of remote debugging for Web App"
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "AuditIfNotExists"
-        },
-        "apiAppAuditFtpsMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: FTPS should be required in your API App",
-            "description": "Enable FTPS enforcement for enhanced security",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "functionAppAuditFtpsMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: FTPS should be required in your Function App",
-            "description": "Enable FTPS enforcement for enhanced security",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "webAppAuditFtpsMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: FTPS should be required in your Web App",
-            "description": "Enable FTPS enforcement for enhanced security",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "apiAppUseManagedIdentityMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: A managed identity should be used in your API App",
-            "description": "Use a managed identity for enhanced authentication security",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "functionAppUseManagedIdentityMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: A managed identity should be used in your Function App",
-            "description": "Use a managed identity for enhanced authentication security",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "webAppUseManagedIdentityMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: A managed identity should be used in your Web App",
-            "description": "Use a managed identity for enhanced authentication security",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "apiAppRequireLatestTlsMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Latest TLS version should be used in your API App",
-            "description": "Upgrade to the latest TLS version",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "functionAppRequireLatestTlsMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Latest TLS version should be used in your Function App",
-            "description": "Upgrade to the latest TLS version",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "webAppRequireLatestTlsMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Latest TLS version should be used in your Web App",
-            "description": "Upgrade to the latest TLS version",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "apiAppDisableWebSocketsMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Monitor disable web sockets for API App",
-            "description": "Enable or disable the monitoring of web sockets for API App",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "functionAppDisableWebSocketsMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Monitor disable web sockets for Function App",
-            "description": "Enable or disable the monitoring of web sockets for Function App",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "webAppDisableWebSocketsMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Monitor disable web sockets for Web App",
-            "description": "Enable or disable the monitoring of web sockets for Web App",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "apiAppEnforceHttpsMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: API App should only be accessible over HTTPS",
-            "description": "Enable or disable the monitoring of the use of HTTPS in API App",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "functionAppEnforceHttpsMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Function App should only be accessible over HTTPS",
-            "description": "Enable or disable the monitoring of the use of HTTPS in function App",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "webAppEnforceHttpsMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Web Application should only be accessible over HTTPS",
-            "description": "Enable or disable the monitoring of the use of HTTPS in Web App",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "apiAppEnforceHttpsMonitoringEffectV2": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: API App should only be accessible over HTTPS V2",
-            "description": "Enable or disable the monitoring of the use of HTTPS in API App V2",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "Audit",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
         },
         "functionAppEnforceHttpsMonitoringEffectV2": {
           "type": "String",
@@ -1528,19 +891,6 @@
           ],
           "defaultValue": "Audit"
         },
-        "apiAppRestrictCORSAccessMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: CORS should not allow every resource to access your API App",
-            "description": "Enable or disable the monitoring of CORS restrictions for API App",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
         "functionAppRestrictCORSAccessMonitoringEffect": {
           "type": "String",
           "metadata": {
@@ -1564,162 +914,6 @@
             "Disabled"
           ],
           "defaultValue": "AuditIfNotExists"
-        },
-        "apiAppUsedCustomDomainsMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Monitor the custom domain use in API App",
-            "description": "Enable or disable the monitoring of custom domain use in API App",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "functionAppUsedCustomDomainsMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Monitor the custom domain use in Function App",
-            "description": "Enable or disable the monitoring of custom domain use in Function App",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "webAppUsedCustomDomainsMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Monitor the custom domain use in Web App",
-            "description": "Enable or disable the monitoring of custom domain use in Web App",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "apiAppUsedLatestDotNetMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Monitor use latest .NET in API App",
-            "description": "Enable or disable the monitoring of .NET version in API App",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "webAppUsedLatestDotNetMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Monitor use latest .NET in Web App",
-            "description": "Enable or disable the monitoring of .NET version in Web App",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "apiAppUsedLatestJavaMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Monitor use latest Java in API App",
-            "description": "Enable or disable the monitoring of Java version in API App",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "webAppUsedLatestJavaMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Monitor use latest Java in Web App",
-            "description": "Enable or disable the monitoring of Java version in Web App",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "webAppUsedLatestNodeJsMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Monitor use latest Node.js in Web App",
-            "description": "Enable or disable the monitoring of Node.js version in Web App",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "apiAppUsedLatestPHPMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Monitor use latest PHP in API App",
-            "description": "Enable or disable the monitoring of PHP version in API App",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "webAppUsedLatestPHPMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Monitor use latest PHP in Web App",
-            "description": "Enable or disable the monitoring of PHP version in Web App",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "apiAppUsedLatestPythonMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Monitor use latest Python in API App",
-            "description": "Enable or disable the monitoring of Python version in API App",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "webAppUsedLatestPythonMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Monitor use latest Python in Web App",
-            "description": "Enable or disable the monitoring of Python version in Web App",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
         },
         "vnetEnableDDoSProtectionMonitoringEffect": {
           "type": "String",
@@ -1789,58 +983,6 @@
           ],
           "defaultValue": "AuditIfNotExists"
         },
-        "sqlServerAdvancedDataSecurityEmailsMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Advanced data security settings for SQL server should contain an email address to receive security alerts",
-            "description": "Enable or disable the monitoring that advanced data security settings for SQL server contain at least one email address to receive security alerts",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "sqlManagedInstanceAdvancedDataSecurityEmailsMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Advanced data security settings for SQL Managed Instance should contain an email address to receive security alerts",
-            "description": "Enable or disable the monitoring that advanced data security settings for SQL Managed Instance contain at least one email address to receive security alerts.",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "sqlServerAdvancedDataSecurityEmailAdminsMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Email notifications to admins and subscription owners should be enabled in SQL server advanced data security settings",
-            "description": "Enable or disable auditing that 'email notification to admins and subscription owners' is enabled in the SQL Server advanced threat protection settings. This ensures that any detections of anomalous activities on SQL server are reported as soon as possible to the admins.",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "sqlManagedInstanceAdvancedDataSecurityEmailAdminsMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Email notifications to admins and subscription owners should be enabled in SQL Managed Instance advanced data security settings",
-            "description": "Enable or disable auditing that 'email notification to admins and subscription owners' is enabled in SQL Managed Instance advanced threat protection settings. This setting ensures that any detections of anomalous activities on SQL Managed Instance are reported as soon as possible to the admins.",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
         "kubernetesServiceRbacEnabledMonitoringEffect": {
           "type": "String",
           "metadata": {
@@ -1853,20 +995,7 @@
           ],
           "defaultValue": "Audit"
         },
-        "kubernetesServicePspEnabledMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Pod Security Policies should be defined on Kubernetes Services",
-            "description": "Enable or disable the monitoring of Kubernetes Services without Pod Security Policy enabled",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "Audit",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "kubernetesServiceAuthorizedIPRangesEnabledMonitoringEffect": {
+         "kubernetesServiceAuthorizedIPRangesEnabledMonitoringEffect": {
           "type": "String",
           "metadata": {
             "displayName": "Authorized IP ranges should be defined on Kubernetes Services",
@@ -1877,19 +1006,6 @@
             "Disabled"
           ],
           "defaultValue": "Audit"
-        },
-        "kubernetesServiceVersionUpToDateMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Kubernetes Services should be upgraded to a non vulnerable Kubernetes version",
-            "description": "Enable or disable the monitoring of the Kubernetes Services with versions that contain known vulnerabilities",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "Audit",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
         },
         "vulnerabilityAssessmentOnManagedInstanceMonitoringEffect": {
           "type": "String",
@@ -1915,32 +1031,6 @@
           ],
           "defaultValue": "AuditIfNotExists"
         },
-        "threatDetectionTypesOnManagedInstanceMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Advanced Threat Protection types should be set to 'All' in SQL Managed Instance advanced data security settings",
-            "description": "It's recommended to enable all Advanced Threat Protection types on your SQL Managed Instance. Enabling all types protects against SQL injection, database vulnerabilities, and any other anomalous activities.",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "threatDetectionTypesOnServerMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Advanced Threat Protection types should be set to 'All' in SQL server Advanced Data Security settings",
-            "description": "It is recommended to enable all Advanced Threat Protection types on your SQL servers. Enabling all types protects against SQL injection, database vulnerabilities, and any other anomalous activities.",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
         "adaptiveNetworkHardeningsMonitoringEffect": {
           "type": "String",
           "metadata": {
@@ -1965,19 +1055,6 @@
           ],
           "defaultValue": "AuditIfNotExists"
         },
-        "restrictAccessToAppServicesMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Access to App Services should be restricted",
-            "description": "Enable or disable the monitoring of permissive network access to app-services",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
         "disableIPForwardingMonitoringEffect": {
           "type": "String",
           "metadata": {
@@ -1989,32 +1066,6 @@
             "Disabled"
           ],
           "defaultValue": "AuditIfNotExists"
-        },
-        "ensureServerTDEIsEncryptedWithYourOwnKeyMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: SQL server TDE protector should be encrypted with your own key",
-            "description": "Enable or disable the monitoring of Transparent Data Encryption (TDE) with your own key support. TDE with your own key support provides increased transparency and control over the TDE Protector, increased security with an HSM-backed external service, and promotion of separation of duties.",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "ensureManagedInstanceTDEIsEncryptedWithYourOwnKeyMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: SQL Managed Instance TDE protector should be encrypted with your own key",
-            "description": "Enable or disable the monitoring of Transparent Data Encryption (TDE) with your own key support. TDE with your own key support provides increased transparency and control over the TDE Protector, increased security with an HSM-backed external service, and promotion of separation of duties.",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
         },
         "ensureServerTDEIsEncryptedWithYourOwnKeyWithDenyMonitoringEffect": {
           "type": "String",
@@ -2174,32 +1225,6 @@
           ],
           "defaultValue": "AuditIfNotExists"
         },
-        "containerRegistryAdvancedThreatProtectionMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Azure Defender for container registries should be enabled",
-            "description": "Enable or disable Azure Defender for container registries",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "kubernetesServiceAdvancedThreatProtectionMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Azure Defender for Kubernetes should be enabled",
-            "description": "Enable or disable Azure Defender for Kubernetes",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
         "containersAdvancedThreatProtectionMonitoringEffect": {
           "type": "String",
           "metadata": {
@@ -2323,48 +1348,6 @@
             "azure-arc",
             "azuredefender",
             "mdc",
-            "azure-extensions-usage-system"
-          ]
-        },
-        "allowedContainerPortsInKubernetesClusterEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Containers should listen on allowed ports only",
-            "description": "Enable or disable monitoring of allowed container ports in Kubernetes clusters",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "audit",
-            "Audit",
-            "deny",
-            "Deny",
-            "disabled",
-            "Disabled"
-          ],
-          "defaultValue": "Audit"
-        },
-        "allowedContainerPortsInKubernetesClusterPorts": {
-          "type": "Array",
-          "metadata": {
-            "displayName": "[Deprecated]: Allowed container ports list in Kubernetes cluster",
-            "description": "List of container ports allowed in Kubernetes cluster. Use ; to separate values",
-            "deprecated": true
-          },
-          "defaultValue": [
-            "-1"
-          ]
-        },
-        "allowedContainerPortsInKubernetesClusterNamespaceExclusion": {
-          "type": "Array",
-          "metadata": {
-            "displayName": "[Deprecated]: Kubernetes namespaces to exclude from monitoring of allowed container port",
-            "description": "List of Kubernetes namespaces to exclude from evaluation of allowed container ports in Kubernetes clusters. To list multiple namespaces, use semicolons (;) to separate them. System namespaces \"kube-system\", \"gatekeeper-system\" and \"azure-arc\" are always excluded by design.",
-            "deprecated": true
-          },
-          "defaultValue": [
-            "kube-system",
-            "gatekeeper-system",
-            "azure-arc",
             "azure-extensions-usage-system"
           ]
         },
@@ -2779,15 +1762,6 @@
             "azure-extensions-usage-system"
           ]
         },
-        "BlockVulnerableImagesNamespaces": {
-          "type": "Array",
-          "metadata": {
-            "displayName": "[Deprecated]: Namespace inclusions",
-            "description": "List of Kubernetes namespaces to only include in policy evaluation. An empty list means the policy is applied to all resources in all namespaces.",
-            "deprecated": true
-          },
-          "defaultValue": []
-        },
         "BlockVulnerableImagesExcludedImages": {
           "type": "Array",
           "metadata": {
@@ -3026,19 +2000,6 @@
           ],
           "defaultValue": "Audit"
         },
-        "latestTLSVersionShouldBeUsedInYourAPIAppMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Latest TLS version should be used in your API App",
-            "description": "Upgrade to the latest TLS version",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
         "diagnosticLogsInAppServicesShouldBeEnabledMonitoringEffect": {
           "type": "String",
           "metadata": {
@@ -3050,19 +2011,6 @@
             "Disabled"
           ],
           "defaultValue": "AuditIfNotExists"
-        },
-        "managedIdentityShouldBeUsedInYourAPIAppMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Managed identity should be used in your API App",
-            "description": "Use a managed identity for enhanced authentication security",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
         },
         "enforceSSLConnectionShouldBeEnabledForPostgresqlDatabaseServersMonitoringEffect": {
           "type": "String",
@@ -3111,110 +2059,6 @@
             "Disabled"
           ],
           "defaultValue": "AuditIfNotExists"
-        },
-        "ensureThatPHPVersionIsTheLatestIfUsedAsAPartOfTheApiAppMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Ensure that PHP version is the latest if used as a part of the API app",
-            "description": "Periodically, newer versions are released for PHP software either due to security flaws or to include additional functionality. Using the latest PHP version for API apps is recommended in order to take advantage of security fixes, if any, and/or new functionalities of the latest version. Currently, this policy only applies to Linux web apps.",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "ensureThatPHPVersionIsTheLatestIfUsedAsAPartOfTheWEBAppMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Ensure that PHP version is the latest if used as a part of the WEB app",
-            "description": "Periodically, newer versions are released for PHP software either due to security flaws or to include additional functionality. Using the latest PHP version for web apps is recommended in order to take advantage of security fixes, if any, and/or new functionalities of the latest version. Currently, this policy only applies to Linux web apps.",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "ensureThatJavaVersionIsTheLatestIfUsedAsAPartOfTheWebAppMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Ensure that Java version is the latest if used as a part of the Web app",
-            "description": "Periodically, newer versions are released for Java software either due to security flaws or to include additional functionality. Using the latest Java version for web apps is recommended in order to take advantage of security fixes, if any, and/or new functionalities of the latest version. Currently, this policy only applies to Linux web apps.",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "ensureThatJavaVersionIsTheLatestIfUsedAsAPartOfTheFunctionAppMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Ensure that Java version is the latest if used as a part of the Function app",
-            "description": "Periodically, newer versions are released for Java software either due to security flaws or to include additional functionality. Using the latest Java version for Function apps is recommended in order to take advantage of security fixes, if any, and/or new functionalities of the latest version. Currently, this policy only applies to Linux web apps.",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "ensureThatJavaVersionIsTheLatestIfUsedAsAPartOfTheApiAppMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Ensure that Java version is the latest if used as a part of the API app",
-            "description": "Periodically, newer versions are released for Java either due to security flaws or to include additional functionality. Using the latest Python version for API apps is recommended in order to take advantage of security fixes, if any, and/or new functionalities of the latest version. Currently, this policy only applies to Linux web apps.",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "ensureThatPythonVersionIsTheLatestIfUsedAsAPartOfTheWebAppMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Ensure that Python version is the latest if used as a part of the Web app",
-            "description": "Periodically, newer versions are released for Python software either due to security flaws or to include additional functionality. Using the latest Python version for web apps is recommended in order to take advantage of security fixes, if any, and/or new functionalities of the latest version. Currently, this policy only applies to Linux web apps.",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "ensureThatPythonVersionIsTheLatestIfUsedAsAPartOfTheFunctionAppMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Ensure that Python version is the latest if used as a part of the Function app",
-            "description": "Periodically, newer versions are released for Python software either due to security flaws or to include additional functionality. Using the latest Python version for Function apps is recommended in order to take advantage of security fixes, if any, and/or new functionalities of the latest version. Currently, this policy only applies to Linux web apps.",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
-        "ensureThatPythonVersionIsTheLatestIfUsedAsAPartOfTheApiAppMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Ensure that Python version is the latest if used as a part of the API app",
-            "description": "Periodically, newer versions are released for Python software either due to security flaws or to include additional functionality. Using the latest Python version for API apps is recommended in order to take advantage of security fixes, if any, and/or new functionalities of the latest version. Currently, this policy only applies to Linux web apps.",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
         },
         "privateEndpointShouldBeEnabledForPostgresqlServersMonitoringEffect": {
           "type": "String",
@@ -3287,19 +2131,6 @@
             "Disabled"
           ],
           "defaultValue": "AuditIfNotExists"
-        },
-        "fTPSOnlyShouldBeRequiredInYourAPIAppMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: FTPS only should be required in your API App",
-            "description": "Enable FTPS enforcement for enhanced security",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
         },
         "functionAppsShouldHaveClientCertificatesEnabledMonitoringEffect": {
           "type": "String",
@@ -3377,20 +2208,6 @@
             "Disabled"
           ],
           "defaultValue": "Audit"
-        },
-        "azureCacheForRedisShouldResideWithinAVirtualNetworkMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "deprecated": true,
-            "displayName": "[Deprecated]: Azure Cache for Redis should reside within a virtual network",
-            "description": "Azure Virtual Network deployment provides enhanced security and isolation for your Azure Cache for Redis, as well as subnets, access control policies, and other features to further restrict access.When an Azure Cache for Redis instance is configured with a virtual network, it is not publicly addressable and can only be accessed from virtual machines and applications within the virtual network."
-          },
-          "allowedValues": [
-            "Audit",
-            "Deny",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
         },
         "azureCacheForRedisShouldUsePrivateEndpointMonitoringEffect": {
           "type": "String",
@@ -3771,19 +2588,6 @@
           ],
           "defaultValue": "Audit"
         },
-        "ensureAPIAppHasClientCertificatesIncomingClientCertificatesSetToOnMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Ensure API app has Client Certificates Incoming client certificates set to On",
-            "description": "Client certificates allow for the app to request a certificate for incoming requests. Only clients that have a valid certificate will be able to reach the app.",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "Audit",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
         "kubernetesClustersShouldBeAccessibleOnlyOverHTTPSMonitoringEffect": {
           "type": "String",
           "metadata": {
@@ -3812,27 +2616,6 @@
             "azure-arc",
             "azure-extensions-usage-system"
           ]
-        },
-        "kubernetesClustersShouldBeAccessibleOnlyOverHTTPSNamespaces": {
-          "type": "Array",
-          "metadata": {
-            "displayName": "[Deprecated]: Namespace inclusions",
-            "description": "This parameter is deprecated. The policy is applied to all Kubernetes resources in all Kubernetes namespaces.",
-            "deprecated": true
-          },
-          "defaultValue": []
-        },
-        "windowsWebServersShouldBeConfiguredToUseSecureCommunicationProtocolsMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "Windows web servers should be configured to use secure communication protocols",
-            "description": "To protect the privacy of information communicated over the Internet, your web servers should use the latest version of the industry-standard cryptographic protocol, Transport Layer Security (TLS). TLS secures communications over a network by using security certificates to encrypt a connection between machines."
-          },
-          "allowedValues": [
-            "AuditIfNotExists",
-            "Disabled"
-          ],
-          "defaultValue": "AuditIfNotExists"
         },
         "windowsWebServersShouldBeConfiguredToUseSecureCommunicationProtocolsIncludeArcMachines": {
           "type": "String",
@@ -3871,20 +2654,6 @@
           ],
           "defaultValue": "Audit"
         },
-        "cognitiveServicesAccountsShouldUseCustomerOwnedStorageOrEnableDataEncryptionMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Cognitive Services accounts should use customer owned storage or enable data encryption",
-            "description": "This policy audits any Cognitive Services account not using customer owned storage nor data encryption. For each Cognitive Services account with storage, use either customer owned storage or enable data encryption.",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "Audit",
-            "Deny",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
-        },
         "publicNetworkAccessShouldBeDisabledForCognitiveServicesAccountsMonitoringEffect": {
           "type": "String",
           "metadata": {
@@ -3897,20 +2666,6 @@
             "Disabled"
           ],
           "defaultValue": "Audit"
-        },
-        "cognitiveServicesAccountsShouldEnableDataEncryptionMonitoringEffect": {
-          "type": "String",
-          "metadata": {
-            "displayName": "[Deprecated]: Cognitive Services accounts should enable data encryption",
-            "description": "This policy audits any Cognitive Services account not using data encryption. For each Cognitive Services account with storage, should enable data encryption with either customer managed or Microsoft managed key.",
-            "deprecated": true
-          },
-          "allowedValues": [
-            "Audit",
-            "Deny",
-            "Disabled"
-          ],
-          "defaultValue": "Disabled"
         },
         "aPIManagementServicesShouldUseAVirtualNetworkMonitoringEffect": {
           "type": "String",
@@ -3966,16 +2721,6 @@
             "Disabled"
           ],
           "defaultValue": "AuditIfNotExists"
-        },
-        "networkWatcherShouldBeEnabledListOfLocations": {
-          "type": "Array",
-          "metadata": {
-            "displayName": "[Deprecated]: List of regions where Network Watcher should be enabled",
-            "description": "To see a complete list of regions, run the PowerShell command Get-AzLocation",
-            "strongType": "location",
-            "deprecated": true
-          },
-          "defaultValue": []
         },
         "networkWatcherShouldBeEnabledResourceGroupName": {
           "type": "String",
