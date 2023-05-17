@@ -3,7 +3,6 @@
         "policy_assignments": [],
         "policy_definitions": [],
         "policy_set_definitions": [
-            "Cloud-Security-BenchMark",
             "Enforce-GR-KeyVault"
         ],
         "role_definitions": [],
