@@ -18,7 +18,7 @@ data "azurerm_client_config" "core" {}
 
 module "enterprise_scale" {
   source  = "Azure/caf-enterprise-scale/azurerm"
-  version = "3.42.0"
+  version = "3.3.0"
 
   providers = {
     azurerm              = azurerm
@@ -83,7 +83,7 @@ module "enterprise_scale" {
         parent_management_group_id = "${var.root_id}"
         subscription_ids           = []
         archetype_config = {
-          archetype_id   = "es_sandboxes"
+          archetype_id   = "default_empty"
           parameters     = {}
           access_control = {}
         }
