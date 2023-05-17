@@ -1,8 +1,6 @@
 {
     "es_sandboxes": {
-        "policy_assignments": [
-            "Audit-UnusedResourcesCostOptimization"
-        ],
+        "policy_assignments": [],
         "policy_definitions": [],
         "policy_set_definitions": [
             "Audit-UnusedResourcesCostOptimization"
