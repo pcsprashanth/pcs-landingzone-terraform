@@ -1,11 +1,8 @@
 {
     "es_root": {
-        "policy_assignments": [
-            "Append-AppService-httpsonly",
-            "Enforce-RG-Tags"
-        ],
-        "policy_definitions": [],
-        "policy_set_definitions": [],
+        "policy_assignments": [ "Enforce-Mandatory-Tags" ],
+        "policy_definitions": [ "Enforce-RG-Tags", "Enforce-Resource-Tags", "Deny-NIC-NSG" ],
+        "policy_set_definitions": [ "Enforce-Mandatory-Tags" ],
         "role_definitions": [],
         "archetype_config": {
             "parameters": {},
