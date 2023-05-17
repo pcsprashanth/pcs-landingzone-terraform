@@ -1,5 +1,5 @@
 {
-    "name": "Append-App-httpsonly",
+    "name": "Append-AppService-httpsonly",
     "type": "Microsoft.Authorization/policyDefinitions",
     "apiVersion": "2021-06-01",
     "scope": null,
