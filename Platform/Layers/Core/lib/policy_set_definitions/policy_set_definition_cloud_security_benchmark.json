@@ -867,6 +867,30 @@
           ],
           "defaultValue": "AuditIfNotExists"
         },
+        "functionAppDisableRemoteDebuggingMonitoringEffect": {
+            "type": "String",
+            "metadata": {
+              "displayName": "Remote debugging should be turned off for Function App",
+              "description": "Enable or disable the monitoring of remote debugging for Function App"
+            },
+            "allowedValues": [
+              "AuditIfNotExists",
+              "Disabled"
+            ],
+            "defaultValue": "AuditIfNotExists"
+        },
+        "webAppDisableRemoteDebuggingMonitoringEffect": {
+            "type": "String",
+            "metadata": {
+              "displayName": "Remote debugging should be turned off for Web Application",
+              "description": "Enable or disable the monitoring of remote debugging for Web App"
+            },
+            "allowedValues": [
+              "AuditIfNotExists",
+              "Disabled"
+            ],
+            "defaultValue": "AuditIfNotExists"
+        },
         "functionAppEnforceHttpsMonitoringEffectV2": {
           "type": "String",
           "metadata": {
