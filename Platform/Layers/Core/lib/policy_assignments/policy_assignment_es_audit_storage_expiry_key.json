@@ -1,0 +1,29 @@
+{
+    "name": "Storage-Expiry-Key",
+    "type": "Microsoft.Authorization/policyAssignments",
+    "apiVersion": "2019-09-01",
+    "properties": {
+      "description": "Ensure the user storage account keys are not expired when key expiration policy is set, for improving security of account keys by taking action when the keys are expired.",
+      "displayName": "Storage account keys should not be expired",
+      "notScopes": [],
+      "parameters": {} ,
+      "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/044985bb-afe1-42cd-8a36-9d5d42424537",
+      "nonComplianceMessages": [
+          {
+            "message": "Storage Account key should not be expired"
+          }
+        ],
+      "scope": "${current_scope_resource_id}",
+      "enforcementMode": null,
+      "nonComplianceMessages": [
+        {
+            "message": "Storage account key should not be expired"
+        }
+    ]
+
+    },
+    "location": "${default_location}",
+    "identity": {
+      "type": "SystemAssigned"
+    }
+  }
