@@ -3,7 +3,7 @@
         "policy_assignments": [],
         "policy_definitions": [],
         "policy_set_definitions": [
-            "Audit-UnusedResourcesCostOptimization"
+            "Audit-UnusedResources"
         ],
         "role_definitions": [],
         "archetype_config": {
