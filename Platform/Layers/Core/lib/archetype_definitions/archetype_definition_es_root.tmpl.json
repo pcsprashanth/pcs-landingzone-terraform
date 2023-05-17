@@ -1,12 +1,11 @@
 {
     "es_root": {
         "policy_assignments": [
-            "Append-AppService-httpsonly"
+            "Append-AppService-httpsonly",
+            "Enforce-RG-Tags"
         ],
         "policy_definitions": [],
-        "policy_set_definitions": [
-            "Cloud-Security-BenchMark"
-        ],
+        "policy_set_definitions": [],
         "role_definitions": [],
         "archetype_config": {
             "parameters": {},
