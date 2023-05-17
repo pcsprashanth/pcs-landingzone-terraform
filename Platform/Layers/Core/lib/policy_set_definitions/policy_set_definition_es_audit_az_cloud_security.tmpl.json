@@ -1,8 +1,7 @@
 {
-    "name": "Azure-Cloud-Security-BenchMark",
+    "name": "Cloud-Security-BenchMark",
     "type": "Microsoft.Authorization/policySetDefinitions",
     "properties": {
-      "name": "Cloud-Security-BenchMark",  
       "displayName": "Cloud security benchmark",
       "policyType": "Custom",
       "description": "The Microsoft cloud security benchmark initiative represents the policies and controls implementing security recommendations defined in Microsoft cloud security benchmark, see https://aka.ms/azsecbm. This also serves as the Microsoft Defender for Cloud default policy initiative. You can directly assign this initiative, or manage its policies and compliance results within Microsoft Defender for Cloud.",
