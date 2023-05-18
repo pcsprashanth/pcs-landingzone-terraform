@@ -1,6 +1,6 @@
 {
     "es_sandboxes": {
-        "policy_assignments": [ "Storage-Expiry-Key", "Append-Apps-httpsonly" ],
+        "policy_assignments": [],
         "policy_definitions": [ "Enforce-RG-Tags", "Enforce-Resource-Tags", "Deny-NIC-NSG", "Append-Apps-httpsonly" ],
         "policy_set_definitions": [],
         "role_definitions": [],
