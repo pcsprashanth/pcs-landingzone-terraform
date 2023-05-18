@@ -1,5 +1,5 @@
 {
-    "name": "Cloud-Security",
+    "name": "Cloud-Security-C",
     "type": "Microsoft.Authorization/policyAssignments",
     "apiVersion": "2019-09-01",
     "properties": {
@@ -8,14 +8,14 @@
         "notScopes": [],
         "parameters": {
         } ,
-        "policyDefinitionId": "${root_scope_resource_id}/providers/Microsoft.Authorization/policyDefinitions/Cloud-Security",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/1f3afdf9-d0c9-4c3d-847f-89da613e70a8",
         "nonComplianceMessages": [
           {
             "message": "one or more policies didnt meet out of 211"
           }
         ],
         "scope": "${current_scope_resource_id}",
-        "enforcementMode": null,
+        "enforcementMode": false,
         "nonComplianceMessages": [
         {
             "message": "One of the Policy didnt meet"
