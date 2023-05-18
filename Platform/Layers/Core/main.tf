@@ -16,13 +16,6 @@ data "azurerm_client_config" "core" {}
 # Declare the Azure landing zones Terraform module
 # and provide a base configuration.
 
-resource "azurerm_subscription_policy_assignment" "asb_assignment" {
-  name                 = "azuresecuritybenchmark"
-  display_name         = "Azure Security Benchmark"
-  policy_definition_id = "/providers/Microsoft.Authorization/policySetDefinitions/1f3afdf9-d0c9-4c3d-847f-89da613e70a8"
-  subscription_id      = data.azurerm_subscription.current.id
-}
-
 module "enterprise_scale" {
   source  = "Azure/caf-enterprise-scale/azurerm"
   version = "3.0.0"

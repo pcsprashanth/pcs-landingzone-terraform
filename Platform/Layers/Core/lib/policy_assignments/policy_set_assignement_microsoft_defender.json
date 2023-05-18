@@ -1,0 +1,24 @@
+{
+  "name": "Microsoft-Defender",
+  "type": "Microsoft.Authorization/policyAssignments",
+  "apiVersion": "2019-09-01",
+  "properties": {
+      "description": "Configure machines to automatically install the Azure Monitor and Azure Security agents. Microsoft Defender for Cloud collects events from the agents and uses them to provide security alerts and tailored hardening tasks (recommendations). Create a resource group, a Data Collection Rule and Log Analytics workspace in the same region as the machine to store audit records. Target machines must be in a supported location.",
+      "displayName": "[Preview]: Configure machines to create the default Microsoft Defender for Cloud pipeline using Azure Monitor Agent",
+      "notScopes": [],
+      "parameters": {
+      },
+      "policyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/362ab02d-c362-417e-a525-45805d58e21d",
+      "nonComplianceMessages": [
+        {
+          "message": "NIST SP 800-53 Rev. 5 controls {enforcementMode} be enforced"
+        }
+      ],
+      "scope": "${current_scope_resource_id}",
+      "enforcementMode": null
+  },
+  "location": "${default_location}",
+  "identity": {
+      "type": "SystemAssigned"
+  }
+}

@@ -1,7 +1,7 @@
 {
     "es_sandboxes": {
 
-        "policy_assignments": [ "Cloud-Security-BenchMark" ],
+        "policy_assignments": [ "" ],
         "policy_definitions": [],
         "policy_set_definitions": [],
         "role_definitions": [],
