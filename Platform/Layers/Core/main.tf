@@ -42,7 +42,7 @@ module "enterprise_scale" {
         parent_management_group_id = "${data.azurerm_client_config.core.tenant_id}"
         subscription_ids           = []
         archetype_config = {
-          archetype_id   = "es_root"
+          archetype_id   = "default_empty"
           parameters     = {}
           access_control = {}
         }
