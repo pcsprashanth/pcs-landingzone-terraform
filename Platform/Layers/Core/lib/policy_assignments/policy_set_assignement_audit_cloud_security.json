@@ -1,29 +1,24 @@
 {
-    "name": "Microsoft-Cloud-Security-BenchMark",
-    "type": "Microsoft.Authorization/policyAssignments",
-    "apiVersion": "2019-09-01",
-    "properties": {
-        "description": "The Microsoft cloud security benchmark initiative represents the policies and controls implementing security recommendations defined in Microsoft cloud security benchmark, see https://aka.ms/azsecbm. This also serves as the Microsoft Defender for Cloud default policy initiative. You can directly assign this initiative, or manage its policies and compliance results within Microsoft Defender for Cloud.",
-        "displayName": "Microsoft Cloud Security BenchMark",
-        "notScopes": [],
-        "parameters": {
-        } ,
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/1f3afdf9-d0c9-4c3d-847f-89da613e70a8",
-        "nonComplianceMessages": [
-          {
-            "message": "one or more policies didnt meet out of 211"
-          }
-        ],
-        "scope": "${current_scope_resource_id}",
-        "enforcementMode": null,
-        "nonComplianceMessages": [
+  "name": "Cloud-Security-BenchMark",
+  "type": "Microsoft.Authorization/policyAssignments",
+  "apiVersion": "2019-09-01",
+  "properties": {
+      "description": "The Microsoft cloud security benchmark initiative represents the policies and controls implementing security recommendations defined in Microsoft cloud security benchmark, see https://aka.ms/azsecbm. This also serves as the Microsoft Defender for Cloud default policy initiative. You can directly assign this initiative, or manage its policies and compliance results within Microsoft Defender for Cloud.",
+      "displayName": "Microsoft cloud security benchmark",
+      "notScopes": [],
+      "parameters": {
+      },
+      "policyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/1f3afdf9-d0c9-4c3d-847f-89da613e70a8",
+      "nonComplianceMessages": [
         {
-            "message": "One of the Policy didnt meet"
+          "message": "NIST SP 800-53 Rev. 5 controls {enforcementMode} be enforced"
         }
-        ]
-    },
-    "location": "${default_location}",
-    "identity": {
-        "type": "none"
-    }
+      ],
+      "scope": "${current_scope_resource_id}",
+      "enforcementMode": null
+  },
+  "location": "${default_location}",
+  "identity": {
+      "type": "SystemAssigned"
+  }
 }
