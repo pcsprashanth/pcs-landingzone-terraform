@@ -11,7 +11,7 @@
       "policyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/362ab02d-c362-417e-a525-45805d58e21d",
       "nonComplianceMessages": [
         {
-          "message": "NIST SP 800-53 Rev. 5 controls {enforcementMode} be enforced"
+          "message": "Azure Monitor and Security agents {enforcementMode} be enforced"
         }
       ],
       "scope": "${current_scope_resource_id}",
