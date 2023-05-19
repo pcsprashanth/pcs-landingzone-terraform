@@ -163,14 +163,6 @@ module "enterprise_scale" {
       }
     }
 }
-terraform {
-  required_providers {
-    azurerm = {
-      source  = "hashicorp/azurerm"
-      version = "3.0.0"
-    }
-  }
-}
 
 resource "azurerm_subscription_policy_assignment" "asb" {
   name                 = "Cloud-BenchMark"
