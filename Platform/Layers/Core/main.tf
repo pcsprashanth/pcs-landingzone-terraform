@@ -171,9 +171,6 @@ terraform {
     }
   }
 }
-provider "azurerm" {
-  features {}
-}
 
 resource "azurerm_subscription_policy_assignment" "asb" {
   name                 = "Cloud-BenchMark"
