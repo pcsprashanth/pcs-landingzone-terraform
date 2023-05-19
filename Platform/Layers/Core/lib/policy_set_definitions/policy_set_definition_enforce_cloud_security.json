@@ -34,10 +34,15 @@
               "value": "[parameters('storageAccountsShouldRestrictNetworkAccessUsingVirtualNetworkRulesMonitoringEffect')]"
             }
           },
-          "groupNames": []
+          "groupNames": ["Azure_Security_Benchmark_v3.0_NS-2"]
         }
       ],
-      "policyDefinitionGroups": null
-      }
-   }         
+      "policyDefinitionGroups": [
+        {
+            "name": "Azure_Security_Benchmark_v3.0_NS-2",
+            "additionalMetadataId": "/providers/Microsoft.PolicyInsights/policyMetadata/Azure_Security_Benchmark_v3.0_NS-2"
+        }
+      ]
+    }
+  }         
 }    
