@@ -8,7 +8,7 @@ variable "root_name" {
   default = "Itaudev"
 }
 
-variable "management_group_id" {
+variable "mg_id" {
   type    = string
   default = "mg-itaudev-sandbox"
 }
