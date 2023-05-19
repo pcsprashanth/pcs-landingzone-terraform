@@ -8,7 +8,7 @@
       "notScopes": [],
       "parameters": {
       },
-      "policyDefinitionId": "${root_scope_resource_id}/providers/Microsoft.Authorization/policySetDefinitions/Enforce-Mandatory-Tags",
+      "policyDefinitionId": "${root_scope_resource_id}/providers/Microsoft.Authorization/policySetDefinitions/Cloud-Security",
       "nonComplianceMessages": [
         {
           "message": "Azure Monitor and Security agents {enforcementMode} be enforced"
