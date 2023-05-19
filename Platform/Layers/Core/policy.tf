@@ -1,7 +1,3 @@
-providers = {
-    azurerm              = azurerm
-} 
-
 data "aruzerm_management_group" "mg" {
     management_group_id = var.mg_id
 }
