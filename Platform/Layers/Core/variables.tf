@@ -10,5 +10,5 @@ variable "root_name" {
 
 variable "mg_id" {
   type    = string
-  default = "mg-itaudev-sandbox"
+  default = "ManagementGroups/mg-itaudev-sandbox"
 }
