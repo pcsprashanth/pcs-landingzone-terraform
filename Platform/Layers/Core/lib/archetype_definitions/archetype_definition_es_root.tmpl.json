@@ -1,8 +1,8 @@
 {
     "es_root": {
-        "policy_assignments": [ "Microsoft-Defender" ],
+        "policy_assignments": [],
         "policy_definitions": [ "Enforce-RG-Tags", "Enforce-Resource-Tags", "Deny-NIC-NSG", "Append-Apps-httpsonly" ],
-        "policy_set_definitions": [ "Enforce-Mandatory-Tags" ],
+        "policy_set_definitions": [ "Enforce-Mandatory-Tags", "Cloud-Security" ],
         "role_definitions": [],
         "archetype_config": {
             "parameters": {},

@@ -1,5 +1,5 @@
 {
-  "name": "Microsoft-Defender",
+  "name": "Cloud-Security",
   "type": "Microsoft.Authorization/policyAssignments",
   "apiVersion": "2019-09-01",
   "properties": {
@@ -8,7 +8,7 @@
       "notScopes": [],
       "parameters": {
       },
-      "policyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/362ab02d-c362-417e-a525-45805d58e21d",
+      "policyDefinitionId": "${root_scope_resource_id}/providers/Microsoft.Authorization/policySetDefinitions/Enforce-Mandatory-Tags",
       "nonComplianceMessages": [
         {
           "message": "Azure Monitor and Security agents {enforcementMode} be enforced"

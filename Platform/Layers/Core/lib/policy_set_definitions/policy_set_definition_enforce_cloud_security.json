@@ -1,0 +1,43 @@
+{
+    "name": "Cloud-Security",
+    "type": "Microsoft.Authorization/policySetDefinitions",
+    "apiVersion": "2021-06-01",
+    "scope": null,
+    "properties": {
+      "displayName": "cloud security",
+      "policyType": "Custom",
+      "description": "The Microsoft cloud security benchmark initiative represents the policies and controls implementing security recommendations defined in Microsoft cloud security benchmark, see https://aka.ms/azsecbm. This also serves as the Microsoft Defender for Cloud default policy initiative. You can directly assign this initiative, or manage its policies and compliance results within Microsoft Defender for Cloud.",
+      "metadata": {
+        "version": "1.0.0",
+        "category": "Security Center"
+      },
+      "parameters": {
+        "storageAccountsShouldRestrictNetworkAccessUsingVirtualNetworkRulesMonitoringEffect": {
+          "type": "String",
+          "metadata": {
+            "displayName": "Storage accounts should restrict network access using virtual network rules",
+            "description": "Protect your storage accounts from potential threats using virtual network rules as a preferred method instead of IP-based filtering. Disabling IP-based filtering prevents public IPs from accessing your storage accounts."
+          },
+          "allowedValues": [
+            "Audit",
+            "Deny",
+            "Disabled"
+          ],
+          "defaultValue": "Audit"
+        },
+      "policyDefinitions": [
+        {
+          "policyDefinitionReferenceId": "storageAccountsShouldRestrictNetworkAccessUsingVirtualNetworkRulesMonitoringEffect",
+          "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2a1a9cdf-e04d-429a-8416-3bfb72a1b26f",
+          "parameters": {
+            "effect": {
+              "value": "[parameters('storageAccountsShouldRestrictNetworkAccessUsingVirtualNetworkRulesMonitoringEffect')]"
+            }
+          },
+          "groupNames": []
+        }
+      ],
+      "policyDefinitionGroups": []
+      }
+   }         
+}    
