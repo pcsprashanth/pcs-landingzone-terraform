@@ -1,4 +1,4 @@
-data "aruzerm_management_group" "mg" {
+data "azurerm_management_group" "mg" {
     management_group_id = var.mg_id
 }
 
