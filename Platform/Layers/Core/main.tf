@@ -170,7 +170,14 @@ module "policyset" {
 
  providers = {
     azurerm              = azurerm
- }
+    azurerm.connectivity = azurerm
+    azurerm.management   = azurerm         
+  }
+
+  root_parent_id = data.azurerm_client_config.core.tenant_id
+  root_id        = var.root_id
+  root_name      = var.root_name
+
 
 resource "azurerm_management_group_policy_assignment" "asb" {
           name                 = "Azure-Security-BenchMark"
