@@ -4,7 +4,7 @@
   "apiVersion": "2019-09-01",
   "properties": {
       "description": "The Microsoft cloud security benchmark initiative represents the policies and controls implementing security recommendations defined in Microsoft cloud security benchmark, see https://aka.ms/azsecbm. This also serves as the Microsoft Defender for Cloud default policy initiative. You can directly assign this initiative, or manage its policies and compliance results within Microsoft Defender for Cloud.",
-      "displayName": "Microsoft Cloud Security BenchMark",
+      "displayName": "Microsoft cloud security benchmark",
       "notScopes": [],
       "parameters": {
       },
@@ -16,9 +16,5 @@
       ],
       "scope": "${current_scope_resource_id}",
       "enforcementMode": false
-  },
-  "location": "${default_location}",
-  "identity": {
-      "type": "SystemAssigned"
   }
 }
