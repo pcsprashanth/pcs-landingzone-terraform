@@ -1,5 +1,5 @@
 {
-  "name": "security cloud benchmark",
+  "name": "security-cloud-benchmark",
   "type": "Microsoft.Authorization/policyAssignments",
   "apiVersion": "2019-09-01",
   "properties": {
