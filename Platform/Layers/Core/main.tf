@@ -168,6 +168,10 @@ module "policyset" {
   source  = "Azure/caf-enterprise-scale/azurerm"
   version = "3.0.0"
 
+ providers = {
+    azurerm              = azurerm
+ }
+
 resource "azurerm_management_group_policy_assignment" "asb" {
           name                 = "Azure-Security-BenchMark"
           management_group_id  = "mg-itaudev"
