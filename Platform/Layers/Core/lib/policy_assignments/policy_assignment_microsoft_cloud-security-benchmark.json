@@ -15,7 +15,7 @@
         }
       ],
       "scope": "${current_scope_resource_id}",
-      "enforcementMode": "Disabled"
+      "enforcementMode": true
   },
   "location": "${default_location}",
     "identity": {
