@@ -1,7 +1,7 @@
 {
     "es_sandboxes": {
 
-        "policy_assignments": [ "security-cloud-benchmark" ],
+        "policy_assignments": [ "security-cloud-benchmark", "defender-cloud-azure-monitor-agent" ],
         "policy_definitions": [],
         "policy_set_definitions": [],
         "role_definitions": [],
