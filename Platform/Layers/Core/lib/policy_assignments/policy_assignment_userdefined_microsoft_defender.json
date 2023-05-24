@@ -1,0 +1,24 @@
+{
+    "name": "userdefined-monitor-agent",
+    "type": "Microsoft.Authorization/policyAssignments",
+    "apiVersion": "2019-09-01",
+    "properties": {
+        "description": "Configure machines to automatically install the Azure Monitor and Azure Security agents. Microsoft Defender for Cloud collects events from the agents and uses them to provide security alerts and tailored hardening tasks (recommendations). Use the user-provided Log Analytics workspace to store audit records. Creates a resource group and a Data Collection Rule in the same region as the user-provided Log Analytics workspace. Target machines must be in a supported location.",
+        "displayName": "[Preview]: Configure machines to create the user-defined Microsoft Defender for Cloud pipeline using Azure Monitor Agent",
+        "notScopes": [],
+        "parameters": {
+        },
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/500ab3a2-f1bd-4a5a-8e47-3e09d9a294c3",
+        "nonComplianceMessages": [
+          {
+            "message": "Azure Monitor Agent not installed on Machines"
+          }
+        ],
+        "scope": "${current_scope_resource_id}",
+        "enforcementMode": "DoNotEnforce"
+    },
+    "location": "${default_location}",
+      "identity": {
+          "type": "SystemAssigned"
+      }
+  }
