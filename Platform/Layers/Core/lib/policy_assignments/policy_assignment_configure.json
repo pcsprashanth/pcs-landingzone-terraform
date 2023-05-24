@@ -1,5 +1,5 @@
 {
-    "name": "defender-cloud-azure-monitor-agent",
+    "name": "azure-monitor-agent",
     "type": "Microsoft.Authorization/policyAssignments",
     "apiVersion": "2019-09-01",
     "properties": {
