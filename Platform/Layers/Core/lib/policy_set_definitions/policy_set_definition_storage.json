@@ -1,5 +1,5 @@
 {
-    "name": "itau-storageaccount-v1",
+    "name": "itau-storageaccount",
     "type": "Microsoft.Authorization/policySetDefinitions",
     "apiVersion": "2023-31-05",
     "scope": null,
