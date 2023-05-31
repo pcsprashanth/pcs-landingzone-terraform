@@ -15,7 +15,8 @@
       "PolicyDefinitions": [
         {
           "policyDefinitionReferenceId": "Storage-account-public-access-should-be-disallowed",
-          "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/4fa4b6c0-31ca-4c0d-b10d-24b96f62a751"
+          "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/4fa4b6c0-31ca-4c0d-b10d-24b96f62a751",
+          "parameters": {}
         }
       ],
       "policyDefinitionGroups": null
