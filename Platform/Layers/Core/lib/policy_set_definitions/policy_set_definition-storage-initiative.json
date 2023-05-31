@@ -1,5 +1,6 @@
 {
     "name": "itau-storageaccount-v1",
+    "type": "Microsoft.Authorization/policySetDefinitions",
     "properties": {
       "displayName": "ITAU - Storage Account v1",
       "description": "This initiative contains the policies necessary to limit storage account",
