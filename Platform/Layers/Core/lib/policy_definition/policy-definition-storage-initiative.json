@@ -1,0 +1,41 @@
+{
+    "name": "itau-storageaccount-v1",
+    "properties": {
+      "displayName": "ITAU - Storage Account v1",
+      "description": "This initiative contains the policies necessary to limit storage account",
+      "metadata": {
+        "version": "1.0.0",
+        "category": "Storage"
+      },
+      "parameters": {},
+      "PolicyDefinitions": [
+        {
+          "policyDefinitionReferenceId": "Storage-account-public-access-should-be-disallowed",
+          "policyDefinitionName": "4fa4b6c0-31ca-4c0d-b10d-24b96f62a751",
+          "parameters": {
+            "effect": {
+              "value": "Deny"
+            }
+          }
+        },
+        {
+          "policyDefinitionReferenceId": "Storage-account-should-restrict-network-access-using-virtual-network-rules",
+          "policyDefinitionName": "2a1a9cdf-e04d-429a-8416-3bfb72a1b26f",
+          "parameters": {
+            "effect": {
+              "value": "Deny"
+            }
+          }
+        },
+        {
+            "policyDefinitionReferenceId": "Storage-accounts-should-restrict-network-access",
+            "policyDefinitionName": "34c877ad-507e-4c82-993e-3452a6e0ad3c",
+            "parameters": {
+              "effect":{
+                "value": "Deny"
+              } 
+            }
+        }
+      ]
+    }
+}

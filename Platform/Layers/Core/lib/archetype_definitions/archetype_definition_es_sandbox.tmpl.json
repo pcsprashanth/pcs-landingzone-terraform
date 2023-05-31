@@ -3,14 +3,10 @@
 
         "policy_assignments": [ 
             "security-cloud-benchmark", 
-            "azure-monitor-agent",
-            "user-monitor-agent",
-            "enable-monitor-vm",
-            "enable-monitor-vmss",
-            "activity-log-workspace"
+            "itau-storage"
          ],
         "policy_definitions": [],
-        "policy_set_definitions": [],
+        "policy_set_definitions": [ "itau-storage" ],
         "role_definitions": [],
         "archetype_config": {
             "parameters": {},
