@@ -4,7 +4,7 @@
       "displayName": "ITAU - Storage Account v1",
       "description": "This initiative contains the policies necessary to limit storage account",
       "metadata": {
-        "version": "1.0.0",
+        "version": "1.0.2",
         "category": "Storage"
       },
       "parameters": {},
