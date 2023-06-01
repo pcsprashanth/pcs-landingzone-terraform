@@ -3,15 +3,15 @@
     "type": "Microsoft.Authorization/policyAssignments",
     "apiVersion": "2023-06-01",
     "properties": {
-        "description": "The Microsoft cloud security benchmark initiative represents the policies and controls implementing security recommendations defined in Microsoft cloud security benchmark, see https://aka.ms/azsecbm. This also serves as the Microsoft Defender for Cloud default policy initiative. You can directly assign this initiative, or manage its policies and compliance results within Microsoft Defender for Cloud.",
-        "displayName": "Microsoft cloud security benchmark",
+        "description": "This initiative contains the policies necessary to limit storage account",
+        "displayName": "ITAU - Storage Account v1",
         "notScopes": [],
         "parameters": {
         },
         "policyDefinitionId": "${root_scope_resource_id}/providers/Microsoft.Authorization/policySetDefinitions/itau-storageaccount",
         "nonComplianceMessages": [
           {
-            "message": "Cloud Security Benchmark enabled"
+            "message": "Storage account did not meet one of the security policy"
           }
         ],
         "scope": "${current_scope_resource_id}",
