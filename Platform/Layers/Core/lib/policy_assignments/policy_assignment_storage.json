@@ -1,14 +1,13 @@
 {
-    "name": "itau-storageaccount",
+    "name": "itau-storage-account",
     "type": "Microsoft.Authorization/policyAssignments",
     "apiVersion": "2019-09-01",
     "properties": {
         "description": "This initiative contains the policies necessary to limit storage account",
         "displayName": "ITAU - Storage Account v1",
         "notScopes": [],
-        "parameters": {
-        },
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/itau-storageaccount",
+        "parameters": {},
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/itau-storage-account",
         "nonComplianceMessages": [
           {
             "message": "One of the storage policy has been not met"
