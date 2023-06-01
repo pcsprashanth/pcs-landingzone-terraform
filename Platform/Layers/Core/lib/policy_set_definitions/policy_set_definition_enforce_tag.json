@@ -11,61 +11,12 @@
         "version": "1.0.0",
         "category": "General"
       },
-      "parameters": {
-        "EnforceRGTags-Owner": {
-            "type": "String",
-            "metadata": {
-              "displayName": "Owner",
-              "description": "Specifies the Owner of the Resource Group"
-            }
-        },
-        "EnforceRGTags-Department": {
-            "type": "String",
-            "metadata": {
-              "displayName": "Department",
-              "description": "Specifies the Department that the Resource Group belongs to"
-            }
-        },
-        "EnforceResourceTags-Owner": {
-            "type": "String",
-            "metadata": {
-              "displayName": "Owner",
-              "description": "Specifies the Owner of the resource"
-            }
-        },
-        "EnforceResourceTags-Department": {
-            "type": "String",
-            "metadata": {
-              "displayName": "Department",
-              "description": "Specifies the Department that the resource belongs to"
-            }
-        }
-      },
+      "parameters": {},
       "policyDefinitions": [
         {
           "policyDefinitionReferenceId": "Resource groups must have mandatory tagging applied",
-          "policyDefinitionId": "${root_scope_resource_id}/providers/Microsoft.Authorization/policyDefinitions/Enforce-RG-Tags",
-          "parameters": {
-            "Owner": {
-              "value": "[parameters('EnforceRGTags-Owner')]"
-            },
-            "Department": {
-              "value": "[parameters('EnforceRGTags-Department')]"
-            }
-          },
-          "groupNames": []
-        },
-        {
-          "policyDefinitionReferenceId": "Resources must have mandatory tagging applied",
-          "policyDefinitionId": "${root_scope_resource_id}/providers/Microsoft.Authorization/policyDefinitions/Enforce-Resource-Tags",
-          "parameters": {
-            "Owner": {
-              "value": "[parameters('EnforceResourceTags-Owner')]"
-            },
-            "Department": {
-              "value": "[parameters('EnforceResourceTags-Department')]"
-            }
-          },
+          "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/4fa4b6c0-31ca-4c0d-b10d-24b96f62a751",
+          "parameters": {},
           "groupNames": []
         }
       ],
