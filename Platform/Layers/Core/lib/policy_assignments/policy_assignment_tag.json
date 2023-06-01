@@ -7,7 +7,7 @@
       "displayName": "Ensure mandatory tagging is applied to both Resources and Resource Groups",
       "notScopes": [],
       "parameters": {},
-      "policyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/Enforce-Mandatory-Tags",
+      "policyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/itau-storageaccount",
       "nonComplianceMessages": [
         {
           "message": "Mandatory tags {enforcementMode} be applied to Resources and Resource Groups."

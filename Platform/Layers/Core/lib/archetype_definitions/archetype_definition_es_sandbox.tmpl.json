@@ -3,7 +3,7 @@
 
         "policy_assignments": [ 
             "security-cloud-benchmark",
-            "itau-storageaccount"
+            "Enforce-Mandatory-Tags"
          ],
         "policy_definitions": [],
         "policy_set_definitions": [ "itau-storageaccount" ],
