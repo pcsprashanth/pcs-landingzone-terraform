@@ -1,5 +1,5 @@
 {
-    "name": "itau-storage-account",
+    "name": "itau-storageaccount",
     "type": "Microsoft.Authorization/policyAssignments",
     "apiVersion": "2019-09-01",
     "properties": {
@@ -7,7 +7,7 @@
         "displayName": "ITAU - Storage Account v1",
         "notScopes": [],
         "parameters": {},
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/itau-storage-account",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/itau-storageaccount",
         "nonComplianceMessages": [
           {
             "message": "One of the storage policy has been not met"

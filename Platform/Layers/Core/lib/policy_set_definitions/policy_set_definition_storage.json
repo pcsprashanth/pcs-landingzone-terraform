@@ -12,10 +12,15 @@
         "category": "Storage"
       },
       "parameters": {},
-      "PolicyDefinitions": [
+      "policyDefinitions": [
         {
           "policyDefinitionReferenceId": "Storage-account-public-access-should-be-disallowed",
           "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/4fa4b6c0-31ca-4c0d-b10d-24b96f62a751",
+          "parameters": {}
+        },
+        {
+          "policyDefinitionReferenceId": "Storage-account-should-restrict-network-access",
+          "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/34c877ad-507e-4c82-993e-3452a6e0ad3c",
           "parameters": {}
         }
       ],
