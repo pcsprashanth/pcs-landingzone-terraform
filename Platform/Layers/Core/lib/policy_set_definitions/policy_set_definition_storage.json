@@ -82,6 +82,66 @@
           "policyDefinitionReferenceId": "Review-audit-data",
           "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/6625638f-3ba1-7404-5983-0ea33d719d34",
           "parameters": {}
+        },
+        {
+          "policyDefinitionReferenceId": "Disable-authenticators-upon-termination",
+          "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/d9d48ffb-0d8c-0bd5-5f31-5a5826d19f10",
+          "parameters": {}
+        },
+        {
+          "policyDefinitionReferenceId": "Revoke-privileged-roles-as-appropriate",
+          "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/32f22cfa-770b-057c-965b-450898425519",
+          "parameters": {}
+        },
+        {
+          "policyDefinitionReferenceId": "Terminate-user-session-automatically",
+          "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/4502e506-5f35-0df4-684f-b326e3cc7093",
+          "parameters": {}
+        },
+        {
+          "policyDefinitionReferenceId": "Storage-account-public-access-should-be-disallowed",
+          "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/4fa4b6c0-31ca-4c0d-b10d-24b96f62a751",
+          "parameters": {}
+        },
+        {
+          "policyDefinitionReferenceId": "Storage-account-should-restrict-network-access",
+          "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/34c877ad-507e-4c82-993e-3452a6e0ad3c",
+          "parameters": {}
+        },
+        {
+          "policyDefinitionReferenceId": "Storage-accounts-should-restrict-network-access-using-virtual-network-rules",
+          "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2a1a9cdf-e04d-429a-8416-3bfb72a1b26f",
+          "parameters": {}
+        },
+        {
+          "policyDefinitionReferenceId": "Storage-accounts-should-allow-access-from-trusted-Microsoft-services",
+          "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/c9d007d0-c057-4772-b18c-01e546713bcd",
+          "parameters": {}
+        },
+        {
+          "policyDefinitionReferenceId": "Storage-accounts-should-use-private-link",
+          "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/6edd7eda-6dd8-40f7-810d-67160c639cd9",
+          "parameters": {}
+        },
+        {
+          "policyDefinitionReferenceId": "Storage-accounts-should-use-customer-managed-key-for-encryption",
+          "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/6fac406b-40ca-413b-bf8e-0bf964659c25",
+          "parameters": {}
+        },
+        {
+          "policyDefinitionReferenceId": "Storage-accounts-should-have-the-specified-minimum-TLS-version",
+          "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/fe83a0eb-a853-422d-aac2-1bffd182c5d0",
+          "parameters": {}
+        },
+        {
+          "policyDefinitionReferenceId": "Storage account encryption scopes should use customer-managed keys to encrypt data at rest",
+          "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/b5ec538c-daa0-4006-8596-35468b9148e8",
+          "parameters": {}
+        },
+        {
+          "policyDefinitionReferenceId": "Deploy-Defender-for-Storage-on-storage-accounts",
+          "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/361c2074-3595-4e5d-8cab-4f21dffc835c",
+          "parameters": {}
         }
       ],
       "policyDefinitionGroups": null
