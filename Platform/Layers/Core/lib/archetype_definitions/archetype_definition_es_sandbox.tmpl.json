@@ -5,7 +5,7 @@
             "security-cloud-benchmark"
          ],
         "policy_definitions": [],
-        "policy_set_definitions": [ "itau-storage" ],
+        "policy_set_definitions": [ "itau-storageaccount", "Enforce-Mandatory-Tags" ],
         "role_definitions": [],
         "archetype_config": {
             "parameters": {},
