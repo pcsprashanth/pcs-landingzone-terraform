@@ -2,7 +2,7 @@
     "es_root": {
         "policy_assignments": [],
         "policy_definitions": [],
-        "policy_set_definitions": [],
+        "policy_set_definitions": [ "itau-storageaccount" ],
         "role_definitions": [],
         "archetype_config": {
             "parameters": {},
