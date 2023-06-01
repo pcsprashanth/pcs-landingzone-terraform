@@ -1,20 +1,20 @@
 {
-    "name": "Enforce-Mandatory-Tags",
+    "name": "itau-storage-account",
     "type": "Microsoft.Authorization/policySetDefinitions",
     "apiVersion": "2021-06-01",
     "scope": null,
     "properties": {
       "policyType": "Custom",
-      "displayName": "Ensure mandatory tagging is applied to both Resources and Resource Groups",
-      "description": "Contains the core tagging policies applicable to the org",
+      "displayName": "ITAU - Storage Account v1",
+      "description": "This initiative contains the policies necessary to limit storage account",
       "metadata": {
         "version": "1.0.0",
-        "category": "General"
+        "category": "Storage"
       },
       "parameters": {},
       "policyDefinitions": [
         {
-          "policyDefinitionReferenceId": "Resource groups must have mandatory tagging applied",
+          "policyDefinitionReferenceId": "Storage-account-public-access-should-be-disallowed",
           "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/4fa4b6c0-31ca-4c0d-b10d-24b96f62a751",
           "parameters": {},
           "groupNames": []
