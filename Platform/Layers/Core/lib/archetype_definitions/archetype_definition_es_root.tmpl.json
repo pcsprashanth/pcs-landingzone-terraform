@@ -1,6 +1,6 @@
 {
     "es_root": {
-        "policy_assignments": [],
+        "policy_assignments": [ "itau-storageaccount" ],
         "policy_definitions": [],
         "policy_set_definitions": [ "itau-storageaccount" ],
         "role_definitions": [],
