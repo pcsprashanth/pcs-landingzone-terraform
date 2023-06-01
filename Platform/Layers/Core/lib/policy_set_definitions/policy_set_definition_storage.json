@@ -14,13 +14,73 @@
       "parameters": {},
       "policyDefinitions": [
         {
-          "policyDefinitionReferenceId": "Storage-account-public-access-should-be-disallowed",
-          "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/4fa4b6c0-31ca-4c0d-b10d-24b96f62a751",
+          "policyDefinitionReferenceId": "Storage-account-secure-transfer",
+          "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/404c3081-a854-4457-ae30-26a93ef643f9",
           "parameters": {}
         },
         {
-          "policyDefinitionReferenceId": "Storage-account-should-restrict-network-access",
-          "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/34c877ad-507e-4c82-993e-3452a6e0ad3c",
+          "policyDefinitionReferenceId": "Storage-account-should-have-infrastructure-encryption",
+          "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/4733ea7b-a883-42fe-8cac-97454c2a9e4a",
+          "parameters": {}
+        },
+        {
+          "policyDefinitionReferenceId": "Define-physical-key-management-process",
+          "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/51e4b233-8ee3-8bdc-8f5f-f33bd0d229b7",
+          "parameters": {}
+        },
+        {
+          "policyDefinitionReferenceId": "Define-Cryptographic-use",
+          "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/c4ccd607-702b-8ae6-8eeb-fc3339cd4b42",
+          "parameters": {}
+        },
+        {
+          "policyDefinitionReferenceId": "Define-Organizational-Requirements-for-cryptographic-key-management",
+          "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/d661e9eb-4e15-5ba1-6f02-cdc467db0d6c",
+          "parameters": {}
+        },
+        {
+          "policyDefinitionReferenceId": "Determine-assertion-requirements",
+          "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/7a0ecd94-3699-5273-76a5-edb8499f655a",
+          "parameters": {}
+        },
+        {
+          "policyDefinitionReferenceId": "Issue-public-key-certificates",
+          "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/97d91b33-7050-237b-3e23-a77d57d84e13",
+          "parameters": {}
+        },
+        {
+          "policyDefinitionReferenceId": "Manage-symmetric-cryptographic-keys",
+          "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/9c276cf3-596f-581a-7fbd-f5e46edaa0f4",
+          "parameters": {}
+        },
+        {
+          "policyDefinitionReferenceId": "Restrict-access-to-private-keys",
+          "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/8d140e8b-76c7-77de-1d46-ed1b2e112444",
+          "parameters": {}
+        },
+        {
+          "policyDefinitionReferenceId": "Audit-privileged-functions",
+          "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/f26af0b1-65b6-689a-a03f-352ad2d00f98",
+          "parameters": {}
+        },
+        {
+          "policyDefinitionReferenceId": "Audit-user-account-status",
+          "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/49c23d9b-02b0-0e42-4f94-e8cef1b8381b",
+          "parameters": {}
+        },
+        {
+          "policyDefinitionReferenceId": "Configure-Azure-Audit-capabilities",
+          "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/a3e98638-51d4-4e28-910a-60e98c1a756f",
+          "parameters": {}
+        },
+        {
+          "policyDefinitionReferenceId": "Determine-auditable-events",
+          "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2f67e567-03db-9d1f-67dc-b6ffb91312f4",
+          "parameters": {}
+        },
+        {
+          "policyDefinitionReferenceId": "Review-audit-data",
+          "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/6625638f-3ba1-7404-5983-0ea33d719d34",
           "parameters": {}
         }
       ],
