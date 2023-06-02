@@ -1,5 +1,5 @@
 {
-    "name": "ITAU-microsoft-defender",
+    "name": "ITAU-defender-default",
     "type": "Microsoft.Authorization/policyAssignments",
     "apiVersion": "2019-09-01",
     "properties": {
