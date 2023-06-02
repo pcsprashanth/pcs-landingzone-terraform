@@ -8,13 +8,13 @@
         "notScopes": [],
         "parameters": {
             "bringYourOwnUserAssignedManagedIdentity": {
-                "Value": true
+                "Value": null
             },
             "userAssignedManagedIdentityName":{
-                "Value": "itau-managed-identity"
+                "Value": null
             },
             "userAssignedManagedIdentityResourceGroup":{
-                "Value": "ITAUTEST"
+                "Value": null
             }
         },
         "policyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/362ab02d-c362-417e-a525-45805d58e21d",
