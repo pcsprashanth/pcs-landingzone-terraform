@@ -2,8 +2,7 @@
     "es_sandboxes": {
 
         "policy_assignments": [ 
-            "security-cloud-benchmark",
-            "itau-storageaccount"
+            "security-cloud-benchmark"
          ],
         "policy_definitions": [],
         "policy_set_definitions": [],
