@@ -1,8 +1,10 @@
 {
     "es_root": {
-        "policy_assignments": [],
+        "policy_assignments": [ 
+            
+            "cis-microsoft-benchmark" ],
         "policy_definitions": [],
-        "policy_set_definitions": [ "itau-storageaccount" ],
+        "policy_set_definitions": [],
         "role_definitions": [],
         "archetype_config": {
             "parameters": {},
