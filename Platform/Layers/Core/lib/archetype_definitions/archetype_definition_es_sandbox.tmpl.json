@@ -4,7 +4,7 @@
         "policy_assignments": [ 
             "security-cloud-benchmark",
             "ITAU-microsoft-defender",
-            "ITAU-microsoft-defender-userdefined"
+            "ITAU-defender-userdefined"
          ],
         "policy_definitions": [],
         "policy_set_definitions": [],
