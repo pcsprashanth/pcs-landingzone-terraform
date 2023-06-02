@@ -3,7 +3,7 @@
 
         "policy_assignments": [ 
             "security-cloud-benchmark",
-            "ITAU-microsoft-defender-agent-machines"
+            "ITAU-microsoft-defender"
          ],
         "policy_definitions": [],
         "policy_set_definitions": [],
