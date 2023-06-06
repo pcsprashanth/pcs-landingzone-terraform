@@ -11,16 +11,16 @@
                 "Value": false
             },
             "userWorkspaceResourceId":{
-                "Value": "law-itaudev-mgnt-brazilsouth-001"
+                "Value": "DefaultWorkspace-25229114-2ec3-4b44-bb5b-649a554894bc-CQ"
             },
             "workspaceRegion":{
                 "Value": "Brazil South"
             },
             "userAssignedManagedIdentityName":{
-                "Value": "mi-law-itaudev-mgnt-brazilsouth-001"
+                "Value": "itau-managed-identity"
             },
             "userAssignedManagedIdentityResourceGroup":{
-                "Value": "rg-law-itaudev-mgnt-brazilsouth-001"
+                "Value": "ITAUTEST"
             }
         },
         "policyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/500ab3a2-f1bd-4a5a-8e47-3e09d9a294c3",
