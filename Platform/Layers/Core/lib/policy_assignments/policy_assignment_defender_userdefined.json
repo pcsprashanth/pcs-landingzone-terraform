@@ -3,8 +3,8 @@
     "type": "Microsoft.Authorization/policyAssignments",
     "apiVersion": "2019-09-01",
     "properties": {
-        "description": "Configure machines to automatically install the Azure Monitor and Azure Security agents. Microsoft Defender for Cloud collects events from the agents and uses them to provide security alerts and tailored hardening tasks (recommendations). Create a resource group, a Data Collection Rule and Log Analytics workspace in the same region as the machine to store audit records. Target machines must be in a supported location.",
-        "displayName": "[Preview]: Configure machines to create the default Microsoft Defender for Cloud pipeline using Azure Monitor Agent",
+        "description": "Configure machines to automatically install the Azure Monitor and Azure Security agents. Microsoft Defender for Cloud collects events from the agents and uses them to provide security alerts and tailored hardening tasks (recommendations). Use the user-provided Log Analytics workspace to store audit records. Creates a resource group and a Data Collection Rule in the same region as the user-provided Log Analytics workspace. Target machines must be in a supported location.",
+        "displayName": "[Preview]: Configure machines to create the user-defined Microsoft Defender for Cloud pipeline using Azure Monitor Agent",
         "notScopes": [],
         "parameters": {
             "bringYourOwnUserAssignedManagedIdentity": {
@@ -14,7 +14,7 @@
                 "Value": "DefaultWorkspace-25229114-2ec3-4b44-bb5b-649a554894bc-CQ"
             },
             "workspaceRegion":{
-                "Value": "Brazil South"
+                "Value": "East US"
             },
             "userAssignedManagedIdentityName":{
                 "Value": "itau-managed-identity"
