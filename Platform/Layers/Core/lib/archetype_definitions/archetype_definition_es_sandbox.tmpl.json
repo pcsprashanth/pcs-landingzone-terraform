@@ -12,7 +12,7 @@
         "archetype_config": {
             "parameters": {},
             "access_control": {
-               "[Chandra-Pay-as-you-go] Reader": ["cfdaf25b-a360-4eb4-b319-101433ecabcb"]
+               "Reader": ["cfdaf25b-a360-4eb4-b319-101433ecabcb"]
             }
         }
     }
