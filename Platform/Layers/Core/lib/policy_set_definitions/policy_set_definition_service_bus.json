@@ -29,11 +29,6 @@
             "parameters": {}
         },
         {
-            "policyDefinitionReferenceId": "Deploy Diagnostic Settings for Service Bus to Event Hub",
-            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/6b51af03-9277-49a9-a3f8-1c69c9ff7403",
-            "parameters": {}
-        },
-        {
             "policyDefinitionReferenceId": "Service Bus Namespaces should disable public network access",
             "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/cbd11fd3-3002-4907-b6c8-579f0e700e13",
             "parameters": {}
