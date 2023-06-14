@@ -1,5 +1,5 @@
 {
-    "name": "service-bus-v1",
+    "name": "itau-service-bus",
     "type": "Microsoft.Authorization/policySetDefinitions",
     "apiVersion": "2021-06-01",
     "scope": null,
@@ -52,5 +52,3 @@
       "policyDefinitionGroups": null
     }
 }
-
-
