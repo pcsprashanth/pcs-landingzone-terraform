@@ -4,14 +4,14 @@
     "apiVersion": "2019-09-01",
     "properties": {
         "description": "Contains the core service bus policies applicable to the org",
-        "displayName": "ITAU Key Vault Initiative",
+        "displayName": "ITAU Service Bus Initiative",
         "notScopes": [],
         "parameters": {
         },
         "policyDefinitionId": "${root_scope_resource_id}/providers/Microsoft.Authorization/policySetDefinitions/service-bus-v1",
         "nonComplianceMessages": [
           {
-            "message": "Custom Key Vault Initiative"
+            "message": "Failed due to Custom Service Bus Initiative"
           }
         ],
         "scope": "${current_scope_resource_id}",
