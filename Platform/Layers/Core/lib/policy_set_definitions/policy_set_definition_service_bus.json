@@ -1,0 +1,56 @@
+{
+    "name": "service-bus-v1",
+    "type": "Microsoft.Authorization/policySetDefinitions",
+    "apiVersion": "2021-06-01",
+    "scope": null,
+    "properties": {
+      "policyType": "Custom",
+      "displayName": "Service Bus Initiatve",
+      "description": "Contains the core service bus policies applicable to the org",
+      "metadata": {
+        "version": "1.0.0",
+        "category": "General"
+      },
+      "parameters": {},
+      "policyDefinitions": [
+        {
+            "policyDefinitionReferenceId": "All authorization rules except RootManageSharedAccessKey should be removed from Service Bus namespace",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/a1817ec0-a368-432a-8057-8371e17ac6ee",
+            "parameters": {}
+        },
+        {
+            "policyDefinitionReferenceId": "Azure Service Bus namespaces should have local authentication methods disabled",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/cfb11c26-f069-4c14-8e36-56c394dae5af",
+            "parameters": {}
+        },
+        {
+            "policyDefinitionReferenceId": "Azure Service Bus namespaces should use private link",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/1c06e275-d63d-4540-b761-71f364c2111d",
+            "parameters": {}
+        },
+        {
+            "policyDefinitionReferenceId": "Deploy Diagnostic Settings for Service Bus to Event Hub",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/6b51af03-9277-49a9-a3f8-1c69c9ff7403",
+            "parameters": {}
+        },
+        {
+            "policyDefinitionReferenceId": "Service Bus Namespaces should disable public network access",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/cbd11fd3-3002-4907-b6c8-579f0e700e13",
+            "parameters": {}
+        },
+        {
+            "policyDefinitionReferenceId": "Service Bus namespaces should have double encryption enabled",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ebaf4f25-a4e8-415f-86a8-42d9155bef0b",
+            "parameters": {}
+        },
+        {
+          "policyDefinitionReferenceId": "Service Bus Premium namespaces should use a customer-managed key for encryption",
+          "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/295fc8b1-dc9f-4f53-9c61-3f313ceab40a",
+          "parameters": {}
+        }
+      ],
+      "policyDefinitionGroups": null
+    }
+}
+
+

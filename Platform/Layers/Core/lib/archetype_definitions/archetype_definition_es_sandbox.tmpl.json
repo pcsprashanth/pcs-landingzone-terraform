@@ -4,7 +4,8 @@
         "policy_assignments": [ 
             "security-cloud-benchmark",
             "ITAU-defender-default",
-            "ITAU-defender-udefined"
+            "ITAU-defender-udefined",
+            "itau-service-bus"
          ],
         "policy_definitions": [],
         "policy_set_definitions": [],
