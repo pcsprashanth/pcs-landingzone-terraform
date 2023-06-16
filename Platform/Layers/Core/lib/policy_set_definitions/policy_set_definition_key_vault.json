@@ -19,11 +19,6 @@
             "parameters": {}
         },
         {
-            "policyDefinitionReferenceId": "Configure Azure Key Vaults with private endpoints",
-            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/9d4fad1f-5189-4a42-b29e-cf7929c6b6df",
-            "parameters": {}
-        },
-        {
             "policyDefinitionReferenceId": "Azure Key Vault should disable public network access",
             "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/405c5871-3e91-4644-8a63-58e19d68ff5b",
             "parameters": {}
