@@ -44,11 +44,6 @@
             "parameters": {}
         },
         {
-            "policyDefinitionReferenceId": "Deploy - Configure diagnostic settings for Azure Key Vault to Log Analytics workspace",
-            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/951af2fa-529b-416e-ab6e-066fd85ac459",
-            "parameters": {}
-        },
-        {
             "policyDefinitionReferenceId": "[Preview]: Azure Key Vault Managed HSM should disable public network access",
             "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/19ea9d63-adee-4431-a95e-1913c6c1c75f",
             "parameters": {}
