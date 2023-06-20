@@ -59,11 +59,6 @@
             "parameters": {}
         },
         {
-            "policyDefinitionReferenceId": "Deploy - Configure diagnostic settings for Azure Key Vault to Log Analytics workspace",
-            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/951af2fa-529b-416e-ab6e-066fd85ac459",
-            "parameters": {}
-        },
-        {
             "policyDefinitionReferenceId": "Deploy - Configure diagnostic settings to an Event Hub to be enabled on Azure Key Vault Managed HSM",
             "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/a6d2c800-5230-4a40-bff3-8268b4987d42",
             "parameters": {}
