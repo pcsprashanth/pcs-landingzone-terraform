@@ -59,11 +59,6 @@
             "parameters": {}
         },
         {
-            "policyDefinitionReferenceId": "Deploy - Configure diagnostic settings to an Event Hub to be enabled on Azure Key Vault Managed HSM",
-            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/a6d2c800-5230-4a40-bff3-8268b4987d42",
-            "parameters": {}
-        },
-        {
             "policyDefinitionReferenceId": "Resource logs in Azure Key Vault Managed HSM should be enabled",
             "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/a2a5b911-5617-447e-a49e-59dbe0e0434b",
             "parameters": {}
