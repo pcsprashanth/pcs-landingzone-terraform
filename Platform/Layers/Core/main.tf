@@ -87,7 +87,7 @@ module "enterprise_scale" {
           parameters     = {
             ITAU-defender-default = {
               bringYourOwnUserAssignedManagedIdentity = [
-                 "false"
+                 false
              ],
              userAssignedManagedIdentityName = [
                 "itau-managed-identity"
