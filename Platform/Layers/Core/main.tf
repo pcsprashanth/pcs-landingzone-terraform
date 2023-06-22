@@ -86,15 +86,9 @@ module "enterprise_scale" {
           archetype_id   = "es_sandboxes"
           parameters     = {
             ITAU-defender-default = {
-              bringYourOwnUserAssignedManagedIdentity= {
-                 false
-              }
-             userAssignedManagedIdentityName = [
-                "itau-managed-identity"
-             ],
-             userAssignedManagedIdentityResourceGroup = [
-                "ITAUTEST"
-             ]
+             bringYourOwnUserAssignedManagedIdentity= false,
+             userAssignedManagedIdentityName = "itau-managed-identity",
+             userAssignedManagedIdentityResourceGroup = "ITAUTEST"
           }
         }
           access_control = {}
