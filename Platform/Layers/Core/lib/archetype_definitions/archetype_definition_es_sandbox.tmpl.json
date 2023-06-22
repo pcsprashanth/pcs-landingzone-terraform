@@ -2,10 +2,7 @@
     "es_sandboxes": {
 
         "policy_assignments": [ 
-            "security-cloud-benchmark",
-            "ITAU-defender-default",
-            "ITAU-defender-udefined",
-            "itau-key-vault"
+            "security-cloud-benchmark"
          ],
         "policy_definitions": [],
         "policy_set_definitions": [],
