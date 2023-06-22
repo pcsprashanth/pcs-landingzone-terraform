@@ -85,7 +85,7 @@ module "enterprise_scale" {
         archetype_config = {
           archetype_id   = "es_sandboxes"
           parameters     = {
-            ITAU-defender-default = {
+            ITAU-defender-default: {
              "bringYourOwnUserAssignedManagedIdentity"= false,
              "userAssignedManagedIdentityName" = "itau-mk",
              "userAssignedManagedIdentityResourceGroup" = "ITAUTEST"
