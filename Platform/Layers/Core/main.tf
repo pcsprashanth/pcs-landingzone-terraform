@@ -96,6 +96,7 @@ module "enterprise_scale" {
                 "Value": "rg-law-itaudev-mgnt-brazilsouth-001"
             }
           }
+        }
           access_control = {}
         }
         # depends_on= [azurerm_subscription.management1]
