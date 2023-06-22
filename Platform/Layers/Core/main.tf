@@ -84,7 +84,25 @@ module "enterprise_scale" {
         subscription_ids           = []
         archetype_config = {
           archetype_id   = "es_sandboxes"
-          parameters     = {}
+          parameters     = {
+            ITAU-defender-udefined: {
+              "bringYourOwnUserAssignedManagedIdentity": {
+                "Value": false
+              },
+              "userWorkspaceResourceId":{
+                 "Value": "DefaultWorkspace-25229114-2ec3-4b44-bb5b-649a554894bc-CQ"
+              },
+              "workspaceRegion":{
+                 "Value": "East US"
+              },
+              "userAssignedManagedIdentityName":{
+                  "Value": "itau-managed"
+              },
+              "userAssignedManagedIdentityResourceGroup":{
+                  "Value": "ITAUTEST"
+              }
+            }
+          }
           access_control = {}
         }
         # depends_on= [azurerm_subscription.management1]
