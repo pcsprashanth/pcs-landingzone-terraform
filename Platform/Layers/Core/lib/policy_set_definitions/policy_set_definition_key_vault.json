@@ -1,0 +1,29 @@
+{
+    "name": "itau-key-vault",
+    "type": "Microsoft.Authorization/policySetDefinitions",
+    "apiVersion": "2021-06-01",
+    "scope": null,
+    "properties": {
+      "policyType": "Custom",
+      "displayName": "Key Vault Initiatve",
+      "description": "Contains the core Key Vault policies applicable to the org",
+      "metadata": {
+        "version": "1.0.0",
+        "category": "Key Vault"
+      },
+      "parameters": {},
+      "policyDefinitions": [
+        {
+            "policyDefinitionReferenceId": "[Preview]: Azure Key Vault should use RBAC permission model",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/12d4fa5e-1f9f-4c21-97a9-b99b3c6611b5",
+            "parameters": {}
+        },
+        {
+            "policyDefinitionReferenceId": "Azure Key Vault should disable public network access",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/405c5871-3e91-4644-8a63-58e19d68ff5b",
+            "parameters": {}
+        }
+      ],
+      "policyDefinitionGroups": null
+    }
+}
