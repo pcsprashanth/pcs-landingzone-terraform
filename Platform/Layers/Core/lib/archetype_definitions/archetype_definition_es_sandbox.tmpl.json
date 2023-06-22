@@ -5,8 +5,7 @@
             "security-cloud-benchmark",
             "ITAU-defender-default",
             "ITAU-defender-udefined",
-            "itau-service-bus",
-            "itau-key-vault"
+            "itau-service-bus"
          ],
         "policy_definitions": [],
         "policy_set_definitions": [],
