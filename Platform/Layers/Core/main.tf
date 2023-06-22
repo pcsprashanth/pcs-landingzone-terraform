@@ -87,8 +87,8 @@ module "enterprise_scale" {
           parameters     = {
             ITAU-defender-default: {
              "bringYourOwnUserAssignedManagedIdentity"= false,
-             "userAssignedManagedIdentityName" = "itau-mk",
-             "userAssignedManagedIdentityResourceGroup" = "ITAUTEST"
+             "userAssignedManagedIdentityName" = itau-mk,
+             "userAssignedManagedIdentityResourceGroup" = ITAUTEST
           }
         }
           access_control = {}
