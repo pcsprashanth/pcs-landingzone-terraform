@@ -13,7 +13,7 @@
         "archetype_config": {
             "parameters": {},
             "access_control": {
-               "Contributor": ["cfdaf25b-a360-4eb4-b319-101433ecabcb","1d5f2329-31b0-4373-b5a3-709e5014d4ea"]
+               "Contributor": ["1d5f2329-31b0-4373-b5a3-709e5014d4ea"]
             }
         }
     }
