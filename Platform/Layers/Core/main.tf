@@ -90,10 +90,10 @@ module "enterprise_scale" {
                  "false"
              ],
              userAssignedManagedIdentityName = [
-                "mi-law-itaudev-mgnt-brazilsouth-001"
+                "itau-managed-identity"
              ],
              userAssignedManagedIdentityResourceGroup = [
-                "rg-law-itaudev-mgnt-brazilsouth-001"
+                "ITAUTEST"
              ]
           }
         }
