@@ -86,10 +86,10 @@ module "enterprise_scale" {
           archetype_id   = "es_sandboxes"
           parameters     = {
             ITAU-defender-udefined = {
-              "bringYourOwnUserAssignedManagedIdentity" = true
-              "userWorkspaceResourceId" = "DefaultWorkspace-25229114-2ec3-4b44-bb5b-649a554894bc-CQ"
-              "workspaceRegion" = "East US"
-              "userAssignedManagedIdentityName" = "itau-managed"
+              "bringYourOwnUserAssignedManagedIdentity" = true,
+              "userWorkspaceResourceId" = "DefaultWorkspace-25229114-2ec3-4b44-bb5b-649a554894bc-CQ",
+              "workspaceRegion" = "East US",
+              "userAssignedManagedIdentityName" = "itau-managed",
               "userAssignedManagedIdentityResourceGroup" = "ITAUTEST"
             }
           }
