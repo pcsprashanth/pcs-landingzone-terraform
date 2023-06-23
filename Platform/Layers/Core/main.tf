@@ -86,8 +86,9 @@ module "enterprise_scale" {
           archetype_id   = "es_sandboxes"
           parameters     = {
             ITAU-defender-udefined = {
-              bringYourOwnUserAssignedManagedIdentity = false,
-              userWorkspaceResourceId = "itau-mk-1"
+              bringYourOwnUserAssignedManagedIdentity = True,
+              userWorkspaceResourceId = "abc"
+              workspaceRegion = "Brazil"
               }
           }
           access_control = {}
