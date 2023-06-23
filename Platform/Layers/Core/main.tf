@@ -85,8 +85,8 @@ module "enterprise_scale" {
         archetype_config = {
           archetype_id   = "es_sandboxes"
           parameters     = {
-            "bringYourOwnUserAssignedManagedIdentity" = false,
-            "userWorkspaceResourceId" = abc
+            "bringYourOwnUserAssignedManagedIdentity" = { "false" },
+            "userWorkspaceResourceId" = { "abc" }
           }
           access_control = {}
         }
