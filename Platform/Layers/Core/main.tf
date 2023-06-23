@@ -85,11 +85,11 @@ module "enterprise_scale" {
         archetype_config = {
           archetype_id   = "es_sandboxes"
           parameters     = {
-            "bringYourOwnUserAssignedManagedIdentity": {
-                "Value": false
+            "bringYourOwnUserAssignedManagedIdentity":{
+              "Value": false
             },
             "userWorkspaceResourceId":{
-                "Value": "abc"
+                "Value": "itau-mk-1"
             },
             "workspaceRegion":{
                 "Value": "Brazil"
