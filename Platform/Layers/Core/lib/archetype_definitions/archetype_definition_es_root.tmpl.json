@@ -3,7 +3,7 @@
         "policy_assignments": [ 
             "cis-microsoft-benchmark" ],
         "policy_definitions": [],
-        "policy_set_definitions": ["itau-key-vault"],
+        "policy_set_definitions": [],
         "role_definitions": [],
         "archetype_config": {
             "parameters": {},
