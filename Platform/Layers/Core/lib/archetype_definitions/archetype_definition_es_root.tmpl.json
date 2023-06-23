@@ -3,7 +3,7 @@
         "policy_assignments": [ 
             "cis-microsoft-benchmark" ],
         "policy_definitions": [],
-        "policy_set_definitions": [],
+        "policy_set_definitions": ["itau-container-apps"],
         "role_definitions": [],
         "archetype_config": {
             "parameters": {},

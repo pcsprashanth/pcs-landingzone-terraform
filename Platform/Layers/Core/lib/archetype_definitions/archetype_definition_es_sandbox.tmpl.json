@@ -8,7 +8,7 @@
             "itau-service-bus"
          ],
         "policy_definitions": [],
-        "policy_set_definitions": ["itau-service-bus","itau-container-apps"],
+        "policy_set_definitions": ["itau-service-bus"],
         "role_definitions": [],
         "archetype_config": {
             "parameters": {},
