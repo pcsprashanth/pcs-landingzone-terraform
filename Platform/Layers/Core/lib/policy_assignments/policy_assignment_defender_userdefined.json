@@ -10,9 +10,11 @@
             "bringYourOwnUserAssignedManagedIdentity": {
                 "Value": true
             },
-            "userWorkspaceResourceId":{},
+            "userWorkspaceResourceId":{
+                "Value": "abc"
+            },
             "workspaceRegion":{
-                "Value": "East US"
+                "Value": "Brazil"
             },
             "userAssignedManagedIdentityName":{
                 "Value": "itau-manage"
