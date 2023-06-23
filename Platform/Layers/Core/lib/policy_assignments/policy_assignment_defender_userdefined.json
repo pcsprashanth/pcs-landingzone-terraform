@@ -8,7 +8,7 @@
         "notScopes": [],
         "parameters": {
             "bringYourOwnUserAssignedManagedIdentity": {
-                "Value": true
+                "Value": false
             },
             "userWorkspaceResourceId":{
                 "Value": "abc"
