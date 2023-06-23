@@ -1,0 +1,24 @@
+{
+    "name": "itau-container-apps",
+    "type": "Microsoft.Authorization/policyAssignments",
+    "apiVersion": "2019-09-01",
+    "properties": {
+        "description": "Contains the additional container apps policies applicable to the org",
+        "displayName": "ITAU Container Apps Initiative",
+        "notScopes": [],
+        "parameters": {
+        },
+        "policyDefinitionId": "${root_scope_resource_id}/providers/Microsoft.Authorization/policySetDefinitions/itau-container-apps",
+        "nonComplianceMessages": [
+          {
+            "message": "Failed due to Container Apps Initiative"
+          }
+        ],
+        "scope": "${current_scope_resource_id}",
+        "enforcementMode": "DoNotEnforce"
+    },
+    "location": "${default_location}",
+      "identity": {
+          "type": "SystemAssigned"
+      }
+}
