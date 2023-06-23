@@ -5,10 +5,11 @@
             "security-cloud-benchmark",
             "ITAU-defender-udefined",
             "itau-container-apps",
+            "itau-service-bus",
             "itau-service-bus"
          ],
         "policy_definitions": [],
-        "policy_set_definitions": ["itau-service-bus"],
+        "policy_set_definitions": [],
         "role_definitions": [],
         "archetype_config": {
             "parameters": {},
