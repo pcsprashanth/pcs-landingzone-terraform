@@ -1,0 +1,104 @@
+{
+    "name": "itau-virtual-machines",
+    "type": "Microsoft.Authorization/policySetDefinitions",
+    "apiVersion": "2021-06-01",
+    "scope": null,
+    "properties": {
+      "policyType": "Custom",
+      "displayName": "Virtual Machine Initiative",
+      "description": "Contains the additional Virtual Machine policies applicable to the org",
+      "metadata": {
+        "version": "1.0.0",
+        "category": "General"
+      },
+      "parameters": {},
+      "policyDefinitions": [
+        {
+            "policyDefinitionReferenceId": "A vulnerability assessment solution should be enabled on your virtual machines",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/501541f7-f7e7-4cd6-868c-4190fdad3ac9",
+            "parameters": {}
+        },
+        {
+            "policyDefinitionReferenceId": "Endpoint protection should be installed on your machines",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/1f7c564c-0a90-4d44-b7e1-9d456cffaee8",
+            "parameters": {}
+        },
+        {
+            "policyDefinitionReferenceId": "Perform vulnerability scans",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/3c5e0e1a-216f-8f49-0a15-76ed0d8b8e1f",
+            "parameters": {}
+        },
+        {
+            "policyDefinitionReferenceId": "Deploy default Microsoft IaaSAntimalware extension for Windows Server",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2835b622-407b-4114-9198-6f7064cbe0dc",
+            "parameters": {}
+        },
+        {
+            "policyDefinitionReferenceId": "Audit Linux machines that allow remote connections from accounts without passwords",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ea53dbee-c6c9-4f0e-9f9e-de0039b78023",
+            "parameters": {}
+        },
+        {
+          "policyDefinitionReferenceId": "Audit Linux machines that do not have the passwd file permissions set to 0644",
+          "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e6955644-301c-44b5-a4c4-528577de6861",
+          "parameters": {}
+        },
+        {
+            "policyDefinitionReferenceId": "Audit Windows machines on which the DSC configuration is not compliant",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/08a2f2d2-94b2-4a7b-aa3b-bb3f523ee6fd",
+            "parameters": {}
+        },
+        {
+            "policyDefinitionReferenceId": "Audit Windows machines on which the Log Analytics agent is not connected as expected",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/6265018c-d7e2-432f-a75d-094d5f6f4465",
+            "parameters": {}
+        },
+        {
+            "policyDefinitionReferenceId": "Audit Windows machines on which the specified services are not installed and 'Running'",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e6ebf138-3d71-4935-a13b-9c7fdddd94df",
+            "parameters": {}
+        },
+        {
+            "policyDefinitionReferenceId": "Audit Windows machines that do not store passwords using reversible encryption",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/da0f98fe-a24b-4ad5-af69-bd0400233661",
+            "parameters": {}
+        },
+        {
+            "policyDefinitionReferenceId": "Configure secure communication protocols(TLS 1.1 or TLS 1.2) on Windows servers",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/828ba269-bf7f-4082-83dd-633417bc391d",
+            "parameters": {}
+        },
+        {
+            "policyDefinitionReferenceId": "Windows Defender Exploit Guard should be enabled on your machines",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/bed48b13-6647-468e-aa2f-1af1d3f4dd40",
+            "parameters": {}
+        },
+        {
+            "policyDefinitionReferenceId": "Windows machines should configure Windows Defender to update protection signatures within one day",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/d96163de-dbe0-45ac-b803-0e9ca0f5764e",
+            "parameters": {}
+        },
+        {
+            "policyDefinitionReferenceId": "[Preview]: Azure Security agent should be installed on your Windows virtual machines",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/bb2c6c6d-14bc-4443-bef3-c6be0adc6076",
+            "parameters": {}
+        },
+        {
+            "policyDefinitionReferenceId": "[Preview]: Azure Security agent should be installed on your Linux virtual machines",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e8794316-d918-4565-b57d-6b38a06381a0",
+            "parameters": {}
+        },
+        {
+            "policyDefinitionReferenceId": "[Preview]: Linux virtual machines should use Secure Boot",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/b1bb3592-47b8-4150-8db0-bfdcc2c8965b",
+            "parameters": {}
+        },
+        {
+            "policyDefinitionReferenceId": "[Preview]: Secure Boot should be enabled on supported Windows virtual machines",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/97566dd7-78ae-4997-8b36-1c7bfe0d8121",
+            "parameters": {}
+        }        
+      ],
+      "policyDefinitionGroups": null
+    }
+}

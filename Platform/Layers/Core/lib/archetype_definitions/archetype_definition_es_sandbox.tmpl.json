@@ -6,7 +6,8 @@
             "ITAU-defender-udefined",
             "itau-container-apps",
             "itau-service-bus",
-            "itau-service-bus"
+            "itau-service-bus",
+            "itau-virtual-machines"
          ],
         "policy_definitions": [],
         "policy_set_definitions": [],
