@@ -8,7 +8,7 @@
             "itau-service-bus",
             "itau-service-bus",
             "itau-virtual-machines",
-            "itau-virtual-machine-set"
+            "itau-virtual-machine-ss"
          ],
         "policy_definitions": [],
         "policy_set_definitions": [],
