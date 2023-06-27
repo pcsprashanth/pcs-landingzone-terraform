@@ -1,14 +1,14 @@
 {
-    "name": "itau-virtual-machine-set",
+    "name": "itau-virtual-machine-ss",
     "type": "Microsoft.Authorization/policyAssignments",
     "apiVersion": "2019-09-01",
     "properties": {
         "description": "Contains the core virtual machine policies applicable to the org",
-        "displayName": "ITAU Virtual Machine Initiative",
+        "displayName": "ITAU Virtual Machine Scale Set Initiative",
         "notScopes": [],
         "parameters": {
         },
-        "policyDefinitionId": "${root_scope_resource_id}/providers/Microsoft.Authorization/policySetDefinitions/itau-virtual-machine-set",
+        "policyDefinitionId": "${root_scope_resource_id}/providers/Microsoft.Authorization/policySetDefinitions/itau-virtual-machine-ss",
         "nonComplianceMessages": [
           {
             "message": "Failed due to Custom Virtual Machine Scale Set Initiative"
