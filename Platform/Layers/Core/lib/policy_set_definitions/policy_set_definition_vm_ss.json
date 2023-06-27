@@ -1,0 +1,59 @@
+{
+    "name": "itau-virtual-machine-ss",
+    "type": "Microsoft.Authorization/policySetDefinitions",
+    "apiVersion": "2021-06-01",
+    "scope": null,
+    "properties": {
+      "policyType": "Custom",
+      "displayName": "Virtual Machine Scale Sets Initiative",
+      "description": "Contains the additional Virtual Machine Scale Sets policies applicable to the org",
+      "metadata": {
+        "version": "1.0.0",
+        "category": "General"
+      },
+      "parameters": {},
+      "policyDefinitions": [
+        {
+            "policyDefinitionReferenceId": "Flow logs should be configured for every network security group",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/c251913d-7d24-4958-af87-478ed3b9ba41",
+            "parameters": {}
+        },
+        {
+            "policyDefinitionReferenceId": "Require automatic OS image patching on Virtual Machine Scale Sets",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/465f0161-0087-490a-9ad9-ad6217f4f43a",
+            "parameters": {}
+        },
+        {
+            "policyDefinitionReferenceId": "[Preview]: Add user-assigned managed identity to enable Guest Configuration assignments on virtual machines",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/f40c7c00-b4e3-4068-a315-5fe81347a904",
+            "parameters": {}
+        },
+        {
+            "policyDefinitionReferenceId": "[Preview]: Assign Built-In User-Assigned Managed Identity to Virtual Machine Scale Sets",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/516187d4-ef64-4a1b-ad6b-a7348502976c",
+            "parameters": {}
+        },
+        {
+            "policyDefinitionReferenceId": "[Preview]: Azure Security agent should be installed on your Linux virtual machine scale sets",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/62b52eae-c795-44e3-94e8-1b3d264766fb",
+            "parameters": {}
+        },
+        {
+            "policyDefinitionReferenceId": "[Preview]: Azure Security agent should be installed on your Windows virtual machine scale sets",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e16f967a-aa57-4f5e-89cd-8d1434d0a29a",
+            "parameters": {}
+        },
+        {
+            "policyDefinitionReferenceId": "[Preview]: ChangeTracking extension should be installed on your Linux virtual machine scale sets",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e71c1e29-9c76-4532-8c4b-cb0573b0014c",
+            "parameters": {}
+        },
+        {
+            "policyDefinitionReferenceId": "[Preview]: ChangeTracking extension should be installed on your Windows virtual machine scale sets",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/4bb303db-d051-4099-95d2-e3e1428a4d00",
+            "parameters": {}
+        }
+      ],
+      "policyDefinitionGroups": null
+    }
+}

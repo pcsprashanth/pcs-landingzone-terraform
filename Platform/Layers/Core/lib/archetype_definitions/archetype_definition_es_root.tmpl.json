@@ -3,7 +3,8 @@
         "policy_assignments": [ 
             "cis-microsoft-benchmark" ],
         "policy_definitions": [],
-        "policy_set_definitions": ["itau-container-apps", "itau-service-bus", "itau-virtual-machines"],
+        "policy_set_definitions": ["itau-container-apps", "itau-service-bus", "itau-virtual-machines",
+    "itau-virtual-machine-set"],
         "role_definitions": [],
         "archetype_config": {
             "parameters": {},

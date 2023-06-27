@@ -7,7 +7,8 @@
             "itau-container-apps",
             "itau-service-bus",
             "itau-service-bus",
-            "itau-virtual-machines"
+            "itau-virtual-machines",
+            "itau-virtual-machine-set"
          ],
         "policy_definitions": [],
         "policy_set_definitions": [],
