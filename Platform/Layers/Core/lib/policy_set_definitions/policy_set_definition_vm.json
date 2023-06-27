@@ -49,21 +49,6 @@
             "parameters": {}
         },
         {
-            "policyDefinitionReferenceId": "Audit Windows machines on which the Log Analytics agent is not connected as expected",
-            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/6265018c-d7e2-432f-a75d-094d5f6f4465",
-            "parameters": {}
-        },
-        {
-            "policyDefinitionReferenceId": "Audit Windows machines on which the specified services are not installed and 'Running'",
-            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e6ebf138-3d71-4935-a13b-9c7fdddd94df",
-            "parameters": {}
-        },
-        {
-            "policyDefinitionReferenceId": "Audit Windows machines that do not store passwords using reversible encryption",
-            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/da0f98fe-a24b-4ad5-af69-bd0400233661",
-            "parameters": {}
-        },
-        {
             "policyDefinitionReferenceId": "Configure secure communication protocols(TLS 1.1 or TLS 1.2) on Windows servers",
             "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/828ba269-bf7f-4082-83dd-633417bc391d",
             "parameters": {}
