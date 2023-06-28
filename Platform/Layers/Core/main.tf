@@ -90,7 +90,7 @@ module "enterprise_scale" {
               "identityResourceGroup" = var.mi_rg_id
           }
           access_control = {
-            Reader = ${var.reader_access_id}
+            Reader = var.reader_access_id
           }
         }
         # depends_on= [azurerm_subscription.management1]
