@@ -6,11 +6,7 @@
         "description": "Contains the core virtual machine policies applicable to the org",
         "displayName": "ITAU Virtual Machine Scale Set Initiative",
         "notScopes": [],
-        "parameters": {
-          "bringYourOwnUserAssignedManagedIdentity": false,
-          "userAssignedIdentityName": "itau-managed-identity",
-          "identityResourceGroup": "ITAUTEST"
-        },
+        "parameters": {},
         "policyDefinitionId": "${root_scope_resource_id}/providers/Microsoft.Authorization/policySetDefinitions/itau-virtual-machine-ss",
         "nonComplianceMessages": [
           {

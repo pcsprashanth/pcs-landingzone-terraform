@@ -84,8 +84,14 @@ module "enterprise_scale" {
         subscription_ids           = []
         archetype_config = {
           archetype_id   = "es_sandboxes"
-          parameters     = {}
-          access_control = {}
+          parameters     = {
+              "bringYourOwnUserAssignedManagedIdentity" =  false,
+              "userAssignedIdentityName" = ${var.mi_id},
+              "identityResourceGroup" = ${var.mi_rg_id}
+          }
+          access_control = {
+            Reader = ${var.reader_access_id}
+          }
         }
         # depends_on= [azurerm_subscription.management1]
       }
