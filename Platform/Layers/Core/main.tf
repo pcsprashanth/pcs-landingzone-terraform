@@ -84,13 +84,7 @@ module "enterprise_scale" {
         subscription_ids           = []
         archetype_config = {
           archetype_id   = "es_sandboxes"
-          parameters     = {
-            itau_virtual_machine_ss = {
-              bringYourOwnUserAssignedManagedIdentity = false,
-              userAssignedIdentityName = var.mi_id,
-              identityResourceGroup = var.mi_rg_id
-            }
-          }
+          parameters     = {}
           access_control = {
             Reader = var.reader_access_id
           }
