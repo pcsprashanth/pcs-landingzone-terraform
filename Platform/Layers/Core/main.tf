@@ -87,10 +87,7 @@ module "enterprise_scale" {
           parameters     = {
             itau-virtual-machine-ss = {
               "bringYourOwnUserAssignedManagedIdentity" = false
-            }
-            ITAU-defender-udefined = {
-              "bringYourOwnUserAssignedManagedIdentity" = false
-            }
+            }          
          }
           access_control = {}
         }
