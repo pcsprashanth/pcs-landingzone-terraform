@@ -84,7 +84,11 @@ module "enterprise_scale" {
         subscription_ids           = []
         archetype_config = {
           archetype_id   = "es_sandboxes"
-          parameters     = {}
+          parameters     = {
+            itau-virtual-machines-ss = {
+              "bringYourOwnUserAssignedManagedIdentity" = false
+            }
+          }
           access_control = {}
         }
         # depends_on= [azurerm_subscription.management1]
