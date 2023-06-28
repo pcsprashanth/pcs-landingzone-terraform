@@ -5,9 +5,9 @@
             "security-cloud-benchmark",
             "itau-container-apps",
             "itau-service-bus",
-            "itau-service-bus",
             "itau-virtual-machines",
-            "itau-virtual-machine-ss"
+            "itau-virtual-machine-ss",
+            "ITAU-defender-udefined"
          ],
         "policy_definitions": [],
         "policy_set_definitions": [],
