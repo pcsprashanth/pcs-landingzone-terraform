@@ -13,12 +13,12 @@ variable "mg_id" {
   default = "ManagementGroups/mg-itaudev-sandbox"
 }
 
-variable "mi_id" {
+variable "mi_name" {
   type    = string
   default = "itau_managed_identity"
 }
 
-variable "mi_rg_id" {
+variable "mi_rg_name" {
   type    = string
   default = "ITAUTEST"
 }
