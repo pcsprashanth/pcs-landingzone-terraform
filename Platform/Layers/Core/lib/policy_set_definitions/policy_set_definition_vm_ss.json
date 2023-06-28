@@ -32,7 +32,9 @@
             "policyDefinitionReferenceId": "[Preview]: Assign Built-In User-Assigned Managed Identity to Virtual Machine Scale Sets",
             "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/516187d4-ef64-4a1b-ad6b-a7348502976c",
             "parameters": {
-                "bringYourOwnUserAssignedManagedIdentity": false
+                "bringYourOwnUserAssignedManagedIdentity": {
+                    "Value": false
+                }
             }
         },
         {
