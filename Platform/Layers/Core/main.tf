@@ -86,8 +86,8 @@ module "enterprise_scale" {
           archetype_id   = "es_sandboxes"
           parameters     = {
               "bringYourOwnUserAssignedManagedIdentity" =  false,
-              "userAssignedIdentityName" = ${var.mi_id},
-              "identityResourceGroup" = ${var.mi_rg_id}
+              "userAssignedIdentityName" = var.mi_id,
+              "identityResourceGroup" = var.mi_rg_id
           }
           access_control = {
             Reader = ${var.reader_access_id}
