@@ -85,6 +85,9 @@ module "enterprise_scale" {
         archetype_config = {
           archetype_id   = "es_sandboxes"
           parameters     = {
+            ITAU-defender-udefined = {
+              "bringYourOwnUserAssignedManagedIdentity" = false
+            }
             itau-virtual-machines-ss = {
               "bringYourOwnUserAssignedManagedIdentity" = false
             }
