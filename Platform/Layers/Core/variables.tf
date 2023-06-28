@@ -23,7 +23,15 @@ variable "mi_rg_name" {
   default = "ITAUTEST"
 }
 
+variable "workspace_id" {
+  type = string
+  default = "ea2f629a-716d-4aba-b660-6ae840d23c52"
+}
+
 variable "reader_access_id" {
   type = list
   default = ["cfdaf25b-a360-4eb4-b319-101433ecabcb", "1d5f2329-31b0-4373-b5a3-709e5014d4ea"]
 }
+
+
+

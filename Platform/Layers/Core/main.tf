@@ -89,6 +89,8 @@ module "enterprise_scale" {
               bringYourOwnUserAssignedManagedIdentity = false
               userAssignedManagedIdentityName = "var.mi_name"
               userAssignedManagedIdentityResourceGroup = "var.mi_rg_name"
+              userWorkspaceResourceId = "var.workspace_id"
+              workspaceRegion = "Brazil South"
             }
           }
           access_control = {
