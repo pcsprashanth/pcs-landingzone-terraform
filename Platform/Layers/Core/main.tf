@@ -85,13 +85,13 @@ module "enterprise_scale" {
         archetype_config = {
           archetype_id   = "es_sandboxes"
           parameters     = {
-            ITAU-defender-udefined = {
-              "bringYourOwnUserAssignedManagedIdentity" = false
-            },
             itau-virtual-machine-ss = {
               "bringYourOwnUserAssignedManagedIdentity" = false
             }
-          }
+            ITAU-defender-udefined = {
+              "bringYourOwnUserAssignedManagedIdentity" = false
+            }
+         }
           access_control = {}
         }
         # depends_on= [azurerm_subscription.management1]
