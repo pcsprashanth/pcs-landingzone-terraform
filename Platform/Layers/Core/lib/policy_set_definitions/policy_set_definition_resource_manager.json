@@ -1,0 +1,40 @@
+{
+    "name": "itau-resource-manager",
+    "type": "Microsoft.Authorization/policySetDefinitions",
+    "apiVersion": "2021-06-01",
+    "scope": null,
+    "properties": {
+      "policyType": "Custom",
+      "displayName": "Resource Initiative",
+      "description": "Contains the additional Resource Manager policies applicable to the org",
+      "metadata": {
+        "version": "1.0.0",
+        "category": "Secure Center"
+      },
+      "parameters": {},
+      "policyDefinitions": [
+        {
+            "policyDefinitionReferenceId": "Activity log should be retained for at least one year",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/b02aacc0-b073-424e-8298-42b22829ee0a",
+            "parameters": {}
+        },
+        {
+            "policyDefinitionReferenceId": "Allowed locations for resource groups",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e765b5de-1225-4ba3-bd56-1ac6695af988",
+            "parameters": {}
+        },
+        {
+            "policyDefinitionReferenceId": "Configure Microsoft Defender for Azure Cosmos DB to be enabled",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/82bf5b87-728b-4a74-ba4d-6123845cf542",
+            "parameters": {}
+        },
+        {
+            "policyDefinitionReferenceId": "Configure Microsoft Defender for Containers to be enabled",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/c9ddb292-b203-4738-aead-18e2716e858f",
+            "parameters": {}
+        }
+
+      ],
+      "policyDefinitionGroups": null
+    }
+}

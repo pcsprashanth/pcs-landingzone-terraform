@@ -9,7 +9,8 @@
             "itau-virtual-machine-ss",
             "ITAU-defender-udefined",
             "itau-logic-apps",
-            "itau-function-apps"
+            "itau-function-apps",
+            "itau-resource-manager"
          ],
         "policy_definitions": [],
         "policy_set_definitions": [],
