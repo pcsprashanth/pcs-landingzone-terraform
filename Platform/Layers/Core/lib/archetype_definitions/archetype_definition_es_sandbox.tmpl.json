@@ -8,7 +8,8 @@
             "itau-virtual-machines",
             "itau-virtual-machine-ss",
             "ITAU-defender-udefined",
-            "itau-logic-apps"
+            "itau-logic-apps",
+            "itau-function-apps"
          ],
         "policy_definitions": [],
         "policy_set_definitions": [],

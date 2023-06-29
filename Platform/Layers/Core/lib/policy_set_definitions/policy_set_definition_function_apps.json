@@ -1,0 +1,64 @@
+{
+    "name": "itau-function-apps",
+    "type": "Microsoft.Authorization/policySetDefinitions",
+    "apiVersion": "2021-06-01",
+    "scope": null,
+    "properties": {
+      "policyType": "Custom",
+      "displayName": "Function Apps Initiative",
+      "description": "Contains the additional Logic Apps policies applicable to the org",
+      "metadata": {
+        "version": "1.0.0",
+        "category": "App Service"
+      },
+      "parameters": {},
+      "policyDefinitions": [
+        {
+            "policyDefinitionReferenceId": "Configure Function app slots to disable public network access",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/242222f3-4985-4e99-b5ef-086d6a6cb01c",
+            "parameters": {}
+        },
+        {
+          "policyDefinitionReferenceId": "Configure Function app slots to only be accessible over HTTPS",
+          "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/08cf2974-d178-48a0-b26d-f6b8e555748b",
+          "parameters": {}
+        },
+        {
+          "policyDefinitionReferenceId": "Configure Function app slots to turn off remote debugging",
+          "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/70adbb40-e092-42d5-a6f8-71c540a5efdb",
+          "parameters": {}
+        },
+        {
+          "policyDefinitionReferenceId": "Configure Function app slots to use the latest TLS version",
+          "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/fa3a6357-c6d6-4120-8429-855577ec0063",
+          "parameters": {}
+        },
+        {
+          "policyDefinitionReferenceId": "Configure Function apps to disable public network access",
+          "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/cd794351-e536-40f4-9750-503a463d8cad",
+          "parameters": {}
+        },
+        {
+          "policyDefinitionReferenceId": "Configure Function apps to only be accessible over HTTPS",
+          "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/a096cbd0-4693-432f-9374-682f485f23f3",
+          "parameters": {}
+        },
+        {
+          "policyDefinitionReferenceId": "Configure Function apps to turn off remote debugging",
+          "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/25a5046c-c423-4805-9235-e844ae9ef49b",
+          "parameters": {}
+        },
+        {
+          "policyDefinitionReferenceId": "Function app slots should not have CORS configured to allow every resource to access your apps",
+          "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/a1a22235-dd10-4062-bd55-7d62778f41b0",
+          "parameters": {}
+        },
+        {
+          "policyDefinitionReferenceId": "Function apps should not have CORS configured to allow every resource to access your apps",
+          "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/0820b7b9-23aa-4725-a1ce-ae4558f718e5",
+          "parameters": {}
+        }   
+      ],
+      "policyDefinitionGroups": null
+    }
+  }
