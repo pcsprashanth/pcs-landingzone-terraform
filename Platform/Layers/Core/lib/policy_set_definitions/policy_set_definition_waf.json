@@ -1,0 +1,34 @@
+{
+    "name": "itau-web-app-firewall",
+    "type": "Microsoft.Authorization/policySetDefinitions",
+    "apiVersion": "2021-06-01",
+    "scope": null,
+    "properties": {
+      "policyType": "Custom",
+      "displayName": "Itau Web Application Firewall(WAF) Initiative",
+      "description": "Contains the additional Web Application Firewall policies applicable to the org",
+      "metadata": {
+        "version": "1.0.0",
+        "category": "Network"
+      },
+      "parameters": {},
+      "policyDefinitions": [
+        {
+            "policyDefinitionReferenceId": "Web Application Firewall (WAF) should enable all firewall rules for Application Gateway",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/632d3993-e2c0-44ea-a7db-2eca131f356d",
+            "parameters": {}
+        },
+        {
+            "policyDefinitionReferenceId": "Web Application Firewall (WAF) should use the specified mode for Application Gateway",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/12430be1-6cc8-4527-a9a8-e3d38f250096",
+            "parameters": {}
+        },
+        {
+            "policyDefinitionReferenceId": "Web Application Firewall (WAF) should use the specified mode for Azure Front Door Service",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/425bea59-a659-4cbb-8d31-34499bd030b8",
+            "parameters": {}
+        }      
+      ],
+      "policyDefinitionGroups": null
+    }
+}

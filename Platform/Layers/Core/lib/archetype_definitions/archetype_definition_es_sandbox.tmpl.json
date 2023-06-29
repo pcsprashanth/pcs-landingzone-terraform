@@ -11,7 +11,9 @@
             "itau-logic-apps",
             "itau-function-apps",
             "itau-app-configuration",
-            "itau-virtual-network"
+            "itau-virtual-network",
+            "itau-app-gateway",
+            "itau-web-app-firewall"
          ],
         "policy_definitions": [],
         "policy_set_definitions": [],

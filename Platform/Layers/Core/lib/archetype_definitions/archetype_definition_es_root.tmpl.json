@@ -11,7 +11,8 @@
                 "itau-logic-apps",
                 "itau-function-apps",
                 "itau-app-configuration",
-                "itau-virtual-network"
+                "itau-virtual-network",
+                "itau-web-app-firewall"
             ],
         "role_definitions": [],
         "archetype_config": {
