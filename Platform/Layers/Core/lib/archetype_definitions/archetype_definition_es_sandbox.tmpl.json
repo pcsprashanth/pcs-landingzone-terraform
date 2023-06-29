@@ -11,7 +11,7 @@
             "itau-logic-apps",
             "itau-function-apps",
             "itau-resource-manager",
-            "itau-app-configuration"
+            "itau-virtual-network"
          ],
         "policy_definitions": [],
         "policy_set_definitions": [],

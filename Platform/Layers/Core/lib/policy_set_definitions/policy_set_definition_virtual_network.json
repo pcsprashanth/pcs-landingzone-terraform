@@ -1,0 +1,54 @@
+{
+    "name": "itau-virtual-network",
+    "type": "Microsoft.Authorization/policySetDefinitions",
+    "apiVersion": "2021-06-01",
+    "scope": null,
+    "properties": {
+      "policyType": "Custom",
+      "displayName": "Network Initiative",
+      "description": "Contains the additional Virtual Network policies applicable to the org",
+      "metadata": {
+        "version": "1.0.0",
+        "category": "Networks"
+      },
+      "parameters": {},
+      "policyDefinitions": [
+        {
+            "policyDefinitionReferenceId": "[Preview]: Container Registry should use a virtual network service endpoint",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/c4857be7-912a-4c75-87e6-e30292bcdf78",
+            "parameters": {}
+        },
+        {
+            "policyDefinitionReferenceId": "App Service apps should use a virtual network service endpoint",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2d21331d-a4c2-4def-a9ad-ee4e1e023beb",
+            "parameters": {}
+        },
+        {
+            "policyDefinitionReferenceId": "Azure VPN gateways should not use 'basic' SKU",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e345b6c3-24bd-4c93-9bbb-7e5e49a17b78",
+            "parameters": {}
+        },
+        {
+            "policyDefinitionReferenceId": "Deploy network watcher when virtual networks are created",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/a9b99dd8-06c5-4317-8629-9d86a3c6e7d9",
+            "parameters": {}
+        },
+        {
+            "policyDefinitionReferenceId": "Flow logs should be configured for every network security group",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/c251913d-7d24-4958-af87-478ed3b9ba41",
+            "parameters": {}
+        },
+        {
+            "policyDefinitionReferenceId": "Network Watcher flow logs should have traffic analytics enabled",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2f080164-9f4d-497e-9db6-416dc9f7b48a",
+            "parameters": {}
+        },
+        {
+            "policyDefinitionReferenceId": "VPN gateways should use only Azure Active Directory (Azure AD) authentication for point-to-site users",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/21a6bc25-125e-4d13-b82d-2e19b7208ab7",
+            "parameters": {}
+        }      
+      ],
+      "policyDefinitionGroups": null
+    }
+}
