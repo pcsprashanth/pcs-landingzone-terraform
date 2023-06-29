@@ -87,9 +87,9 @@ module "enterprise_scale" {
           parameters     = {
             ITAU-defender-udefined = {
               bringYourOwnUserAssignedManagedIdentity = false
-              userAssignedManagedIdentityName = "var.mi_name"
-              userAssignedManagedIdentityResourceGroup = "var.mi_rg_name"
-              userWorkspaceResourceId = "var.workspace_id"
+              userAssignedManagedIdentityName = var.mi_name
+              userAssignedManagedIdentityResourceGroup = var.mi_rg_name
+              userWorkspaceResourceId = var.workspace_id
               workspaceRegion = "Brazil South"
             }
           }

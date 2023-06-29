@@ -1,0 +1,29 @@
+{
+    "name": "itau-logic-apps",
+    "type": "Microsoft.Authorization/policySetDefinitions",
+    "apiVersion": "2021-06-01",
+    "scope": null,
+    "properties": {
+      "policyType": "Custom",
+      "displayName": "Logic Apps Initiative",
+      "description": "Contains the additional Logic Apps policies applicable to the org",
+      "metadata": {
+        "version": "1.0.0",
+        "category": "Logic Apps"
+      },
+      "parameters": {},
+      "policyDefinitions": [
+        {
+            "policyDefinitionReferenceId": "Logic Apps Integration Service Environment should be encrypted with customer-managed keys",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/1fafeaf6-7927-4059-a50a-8eb2a7a6f2b5",
+            "parameters": {}
+        },
+        {
+            "policyDefinitionReferenceId": "Logic Apps should be deployed into Integration Service Environment",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/dc595cb1-1cde-45f6-8faf-f88874e1c0e1",
+            "parameters": {}
+        }      
+      ],
+      "policyDefinitionGroups": null
+    }
+}

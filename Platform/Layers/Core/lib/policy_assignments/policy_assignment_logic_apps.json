@@ -1,0 +1,23 @@
+{
+    "name": "itau-logic-apps",
+    "type": "Microsoft.Authorization/policyAssignments",
+    "apiVersion": "2019-09-01",
+    "properties": {
+        "description": "Contains the additional Logic Apps policies applicable to the org",
+        "displayName": "Itau Logic Apps Initiative",
+        "notScopes": [],
+        "parameters": {},
+        "policyDefinitionId": "${root_scope_resource_id}/providers/Microsoft.Authorization/policySetDefinitions/itau-logic-apps",
+        "nonComplianceMessages": [
+          {
+            "message": ""
+          }
+        ],
+        "scope": "${current_scope_resource_id}",
+        "enforcementMode": "DoNotEnforce"
+    },
+    "location": "${default_location}",
+      "identity": {
+          "type": "SystemAssigned"
+      }
+  }
