@@ -1,0 +1,29 @@
+{
+    "name": "itau-app-configuration",
+    "type": "Microsoft.Authorization/policySetDefinitions",
+    "apiVersion": "2021-06-01",
+    "scope": null,
+    "properties": {
+      "policyType": "Custom",
+      "displayName": "App Configuration Initiative",
+      "description": "Contains the additional App Configuration policies applicable to the org",
+      "metadata": {
+        "version": "1.0.0",
+        "category": "App Configuration"
+      },
+      "parameters": {},
+      "policyDefinitions": [
+        {
+            "policyDefinitionReferenceId": "App Configuration should disable public network access",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/3d9f5e4c-9947-4579-9539-2a7695fbc187",
+            "parameters": {}
+        },
+        {
+            "policyDefinitionReferenceId": "Configure App Configuration stores to disable local authentication methods",
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/72bc14af-4ab8-43af-b4e4-38e7983f9a1f",
+            "parameters": {}
+        }      
+      ],
+      "policyDefinitionGroups": null
+    }
+}

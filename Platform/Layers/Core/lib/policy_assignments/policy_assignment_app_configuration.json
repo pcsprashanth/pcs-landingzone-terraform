@@ -1,0 +1,23 @@
+{
+    "name": "itau-app-configuration",
+    "type": "Microsoft.Authorization/policyAssignments",
+    "apiVersion": "2019-09-01",
+    "properties": {
+        "description": "Contains the additional App Configuration policies applicable to the org",
+        "displayName": "Itau App Configuration Initiative",
+        "notScopes": [],
+        "parameters": {},
+        "policyDefinitionId": "${root_scope_resource_id}/providers/Microsoft.Authorization/policySetDefinitions/itau-app-configuration",
+        "nonComplianceMessages": [
+          {
+            "message": ""
+          }
+        ],
+        "scope": "${current_scope_resource_id}",
+        "enforcementMode": "DoNotEnforce"
+    },
+    "location": "${default_location}",
+      "identity": {
+          "type": "SystemAssigned"
+      }
+  }

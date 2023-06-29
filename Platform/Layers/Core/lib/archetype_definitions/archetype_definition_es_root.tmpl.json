@@ -3,8 +3,16 @@
         "policy_assignments": [ 
             "cis-microsoft-benchmark" ],
         "policy_definitions": [],
-        "policy_set_definitions": ["itau-container-apps", "itau-service-bus", "itau-virtual-machines",
-                                    "itau-virtual-machine-ss", "itau-logic-apps", "itau-function-apps", "itau-resource-manager"],
+        "policy_set_definitions": [
+                "itau-container-apps",
+                "itau-service-bus",
+                "itau-virtual-machines",
+                "itau-virtual-machine-ss",
+                "itau-logic-apps",
+                "itau-function-apps",
+                "itau-resource-manager",
+                "itau-app-configuration"
+            ],
         "role_definitions": [],
         "archetype_config": {
             "parameters": {},
