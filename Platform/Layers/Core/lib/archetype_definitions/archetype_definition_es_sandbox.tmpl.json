@@ -10,7 +10,7 @@
             "ITAU-defender-udefined",
             "itau-logic-apps",
             "itau-function-apps",
-            "itau-resource-manager",
+            "itau-app-configuration",
             "itau-virtual-network"
          ],
         "policy_definitions": [],
